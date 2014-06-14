@@ -17,18 +17,17 @@
 	NetworkStatus netStatus;
 	bool bReloadOnNetUp;
 }
--(void)parseFeedForImages:(NSData *)pageData;
 
-@property (assign) IBOutlet NSWindow *window;
-@property (weak) IBOutlet NSTextFieldCell *RSSTextEdit;
-@property (unsafe_unretained) IBOutlet NSTextView *PageText;
-@property (weak) IBOutlet NSImageCell *SampleImage;
-@property (weak) IBOutlet NSComboBoxCell *ComboBoxCell;
-@property (weak) IBOutlet NSComboBox *ComboConrol;
-@property (retain) IBOutlet NSMutableDictionary *dictImageList;
-@property (weak) IBOutlet NSComboBox *RefreshTimeCombo;
-@property (nonatomic) Reachability *internetReachability;
+@property (assign) IBOutlet NSWindow *window; // main window
+@property (weak) IBOutlet NSTextFieldCell *RSSTextEdit; // text edit showing rss url we load
+@property (weak) IBOutlet NSImageCell *SampleImage; // shows currently loaded background
+@property (weak) IBOutlet NSComboBoxCell *ComboBoxCell; // selected rss feed type item
+@property (weak) IBOutlet NSComboBox *ComboConrol; // combo pulldown for feed types
+@property (retain) IBOutlet NSMutableDictionary *dictImageList; // dictionary for images we loaded from the rss feed
+@property (weak) IBOutlet NSComboBox *RefreshTimeCombo; //combo for reload time of urls
+@property (nonatomic) Reachability *internetReachability; // helper object for network status
 
+- (void)parseFeedForImages:(NSData *)pageData;
 - (IBAction)ChangeBackground:(id)sender;
 - (IBAction)Configure:(id)sender;
 - (IBAction)SetTimerFromCombo:(id)sender;

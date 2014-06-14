@@ -11,8 +11,11 @@
 #import "NSDate+InternetDateTime.h"
 #import "HTMLParser.h"
 
-#define IMAGEURL_PLIST @"Images.plist"
+#define IMAGEURL_PLIST @"Images.plist" // plist we save off the images we loaded from the rss feed
 
+//------------------------------------------------------
+// Purpose: list item to track viewed RSS items
+//------------------------------------------------------
 @implementation LoadedURLEntry
 
 @synthesize dLastUsed;
@@ -35,6 +38,9 @@
 @end
 
 
+//------------------------------------------------------
+// Purpose: helper for xml parsing
+//------------------------------------------------------
 @implementation GDataXMLElement(Extras)
 
 - (GDataXMLElement *)elementForChild:(NSString *)childName {
@@ -53,6 +59,10 @@
 
 @implementation AppDelegate
 
+
+//------------------------------------------------------
+// Purpose: app full loaded, getting ready to display
+//------------------------------------------------------
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 	updateTimer = nil;
@@ -89,23 +99,23 @@
 }
 
 
+//------------------------------------------------------
+// Purpose: app exit
+//------------------------------------------------------
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:kReachabilityChangedNotification object:nil];
 	
-	//These notifications are filed on NSWorkspace's notification center, not the default
-    // notification center. You will not receive sleep/wake notifications if you file
-    //with the default notification center.
     [[[NSWorkspace sharedWorkspace] notificationCenter] removeObserver: self
 															   name: NSWorkspaceWillSleepNotification object: nil];
-	
-    [[[NSWorkspace sharedWorkspace] notificationCenter] removeObserver: self
+	[[[NSWorkspace sharedWorkspace] notificationCenter] removeObserver: self
 															   name: NSWorkspaceDidWakeNotification object: nil];
-	
 }
 
 
-
+//------------------------------------------------------
+// Purpose: network state change callback
+//------------------------------------------------------
 - (void) reachabilityChanged:(NSNotification *)note
 {
     Reachability* curReach = [note object];
@@ -113,6 +123,9 @@
 }
 
 
+//------------------------------------------------------
+// Purpose: act based on current network state
+//------------------------------------------------------
 - (void)updateInterfaceWithReachability:(Reachability *)reachability
 {
 	if ( bReloadOnNetUp )
@@ -127,6 +140,9 @@
 }
 
 
+//------------------------------------------------------
+// Purpose: machine is waking from sleep
+//------------------------------------------------------
 - (void) receiveWakeNote: (NSNotification*) note
 {
 	if ( netStatus == NotReachable )
@@ -140,13 +156,19 @@
 		[self ChangeBackground:nil ];
 }
 
+
+//------------------------------------------------------
+// Purpose: machine is going to sleep
+//------------------------------------------------------
 - (void) receiveSleepNote: (NSNotification*) note
 {
 	netStatus = NotReachable;
 }
 
 
-
+//------------------------------------------------------
+// Purpose: load a new background image from the current rss feed
+//------------------------------------------------------
 - (IBAction)ChangeBackground:(id)sender
 {
 	if ( netStatus != NotReachable )
@@ -155,6 +177,10 @@
 		bReloadOnNetUp = true;
 }
 
+
+//------------------------------------------------------
+// Purpose: app is starting
+//------------------------------------------------------
 -(void)awakeFromNib{
 	NSString *errorDesc = nil;
 	NSPropertyListFormat format;
@@ -191,22 +217,18 @@
 }
 
 
-- (void)appendToMyTextView:(NSString*)text
-{
-    dispatch_async(dispatch_get_main_queue(), ^{
-        NSAttributedString* attr = [[NSAttributedString alloc] initWithString:text];
-		
-        [[self.PageText textStorage] appendAttributedString:attr];
-        [self.PageText scrollRangeToVisible:NSMakeRange([[self.PageText string] length], 0)];
-    });
-}
-
-
+//------------------------------------------------------
+// Purpose: show the config dialog
+//------------------------------------------------------
 - (IBAction)Configure:(id)sender
 {
 	[self.window makeKeyAndOrderFront:sender];
 }
 
+
+//------------------------------------------------------
+// Purpose: read combo for reload time on background and set a timer
+//------------------------------------------------------
 - (IBAction)SetTimerFromCombo:(id)sender
 {
 	if ( updateTimer != nil )
@@ -238,11 +260,18 @@
 }
 	
 
+//------------------------------------------------------
+// Purpose: combo box changed
+//------------------------------------------------------
 - (void)comboBoxSelectionDidChange:(NSNotification *)notification
 {
 	[self SetTimerFromCombo: nil];
 }
 
+
+//------------------------------------------------------
+// Purpose: nibble the first bytes of an image file and determine its likely file type
+//------------------------------------------------------
 - (NSString *)contentTypeForImageData:(NSData *)data {
     uint8_t c;
     [data getBytes:&c length:1];
@@ -264,11 +293,13 @@
     return nil;
 }
 
+
+//------------------------------------------------------
+// Purpose: given a URL to an image load it as a background image and record it in our loaded plist
+//------------------------------------------------------
 - (void)loadImage:(NSString *)urlToLoad
 {
 	NSURL *imageURL = [NSURL URLWithString:urlToLoad];
-	
-	
 	NSMutableDictionary *screenOptions =
 	[[[NSWorkspace sharedWorkspace] desktopImageOptionsForScreen:[NSScreen mainScreen]] mutableCopy];
 	
@@ -276,8 +307,7 @@
 	
 	// replace out the old clip value with the new
 	[screenOptions setObject:allowClipping forKey:NSWorkspaceDesktopImageAllowClippingKey];
-	
-	
+		
 	NSURLRequest *urlRequst = [NSURLRequest requestWithURL:imageURL];
 	
 	dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0ul);
@@ -321,11 +351,13 @@
 			
 			bLoadedImage = true;
 		}
-		
 	});
-
 }
 
+
+//------------------------------------------------------
+// Purpose: parse an rss feed from loaded xml data
+//------------------------------------------------------
 - (void)parseRss:(GDataXMLElement *)rootElement {
     
 	bLoadedImage = false;
@@ -357,7 +389,6 @@
 			for (HTMLNode *link in links) {
 				if ( [[link contents] isEqualToString:@"[link]" ] )
 				{
-					[self appendToMyTextView:[link getAttributeNamed:@"href"]];
 					NSString *pchExt = [link getAttributeNamed:@"href"];
 					if ( [pchExt hasSuffix:@".jpg" ] || [pchExt hasSuffix:@".png" ] )
 					{
@@ -379,13 +410,10 @@
 							entry.dLastUsed = [NSDate date];
 							entry.nViewedCount =  [NSNumber numberWithInt:[entry.nViewedCount intValue] +1];
 						}
-						
 					}
 				}
 			} // for( HTMLNode)
-			
         }
-		
     }
 	
 	if ( self.dictImageList.count > 0 )
@@ -408,44 +436,19 @@
 			NSLog( @"%@", saveError);
 		}
 	}
-
-    
 }
 
+
+//------------------------------------------------------
+// Purpose: parse an atom style feed from a loaded xml document
+//------------------------------------------------------
 - (void)parseAtom:(GDataXMLElement *)rootElement {
-    
-   /* NSString *blogTitle = [rootElement valueForChild:@"title"];
-    
-    NSArray *items = [rootElement elementsForName:@"entry"];
-    for (GDataXMLElement *item in items) {
-        
-        NSString *articleTitle = [item valueForChild:@"title"];
-        NSString *articleUrl = nil;
-        NSArray *links = [item elementsForName:@"link"];
-        for(GDataXMLElement *link in links) {
-            NSString *rel = [[link attributeForName:@"rel"] stringValue];
-            NSString *type = [[link attributeForName:@"type"] stringValue];
-            if ([rel compare:@"alternate"] == NSOrderedSame &&
-                [type compare:@"text/html"] == NSOrderedSame) {
-                articleUrl = [[link attributeForName:@"href"] stringValue];
-            }
-        }
-        
-        NSString *articleDateString = [item valueForChild:@"updated"];
-        NSDate *articleDate = [NSDate dateFromInternetDateTimeString:articleDateString formatHint:DateFormatHintRFC3339];
-        
-        RSSEntry *entry = [[[RSSEntry alloc] initWithBlogTitle:blogTitle
-                                                  articleTitle:articleTitle
-                                                    articleUrl:articleUrl
-                                                   articleDate:articleDate] autorelease];
-        [entries addObject:entry];
-        
-    }*/
-    
 }
 
 
-
+//------------------------------------------------------
+// Purpose: parse a loaded xml document
+//------------------------------------------------------
 - (void)parseFeed:(GDataXMLElement *)rootElement  {
     if ([rootElement.name compare:@"rss"] == NSOrderedSame) {
         [self parseRss:rootElement];
@@ -457,11 +460,11 @@
 }
 
 
+//------------------------------------------------------
+// Purpose: load a feed from page data we got back from a http call
+//------------------------------------------------------
 -(void)parseFeedForImages:(NSData *)pageData
 {
-//	NSString *someString = [[NSString alloc] initWithData:pageData encoding:NSASCIIStringEncoding];
-//	[self.PageText setString:someString];
-	
 	NSError *error;
 	GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:pageData
 														   options:0 error:&error];
@@ -475,16 +478,12 @@
 
 }
 
+
+//------------------------------------------------------
+// Purpose: load the configured RSS feed
+//------------------------------------------------------
 - (IBAction)LoadRSSFeed:(id)sender {
-	//NSString *RSSFeedText = [self.RSSTextEdit stringValue];
 	NSString *RSSFeedText = [[NSString alloc] initWithFormat:@"http://www.reddit.com/r/%@Porn/.rss", [self.ComboBoxCell stringValue]];
-/*	NSAlert *alert = [NSAlert alertWithMessageText: @"Feed"
-									 defaultButton:@"OK"
-									alternateButton:nil
-									   otherButton:nil
-						 informativeTextWithFormat:@"%@", RSSFeedText ];
-	[alert runModal];*/
-	
     NSURL *feedURL = [NSURL URLWithString:RSSFeedText];
     NSURLRequest *urlRequst = [NSURLRequest requestWithURL:feedURL];
 	
