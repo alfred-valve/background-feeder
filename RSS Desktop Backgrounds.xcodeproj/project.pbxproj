@@ -23,7 +23,8 @@
 		BB7D1121192B1E3500BA85AF /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7D1120192B1E3500BA85AF /* NSDate+InternetDateTime.m */; };
 		BB7D1126192B25A800BA85AF /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7D1123192B25A800BA85AF /* HTMLNode.m */; };
 		BB7D1127192B25A800BA85AF /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7D1125192B25A800BA85AF /* HTMLParser.m */; };
-		BBC62B33194CE674004CD87B /* raeddit.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC62B32194CE674004CD87B /* raeddit.png */; };
+		BB85B23B194D0AFD00D55A27 /* raeddit128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = BB85B23A194D0AFD00D55A27 /* raeddit128x128.png */; };
+		BB85B23D194D0B2100D55A27 /* raeddit64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = BB85B23C194D0B2100D55A27 /* raeddit64x64.png */; };
 		BBC62B36194CEA41004CD87B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC62B35194CEA41004CD87B /* Reachability.m */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +67,8 @@
 		BB7D1123192B25A800BA85AF /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
 		BB7D1124192B25A800BA85AF /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
 		BB7D1125192B25A800BA85AF /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
-		BBC62B32194CE674004CD87B /* raeddit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = raeddit.png; path = ../../../../Downloads/raeddit.png; sourceTree = "<group>"; };
+		BB85B23A194D0AFD00D55A27 /* raeddit128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = raeddit128x128.png; sourceTree = "<group>"; };
+		BB85B23C194D0B2100D55A27 /* raeddit64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = raeddit64x64.png; sourceTree = "<group>"; };
 		BBC62B34194CEA41004CD87B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		BBC62B35194CEA41004CD87B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,7 +160,8 @@
 		BB7D10CD192B0D7600BA85AF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BBC62B32194CE674004CD87B /* raeddit.png */,
+				BB85B23C194D0B2100D55A27 /* raeddit64x64.png */,
+				BB85B23A194D0AFD00D55A27 /* raeddit128x128.png */,
 				BB7D10CE192B0D7600BA85AF /* RSS Desktop Backgrounds-Info.plist */,
 				BB7D10CF192B0D7600BA85AF /* InfoPlist.strings */,
 				BB7D10D2192B0D7600BA85AF /* main.m */,
@@ -262,8 +265,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB85B23D194D0B2100D55A27 /* raeddit64x64.png in Resources */,
+				BB85B23B194D0AFD00D55A27 /* raeddit128x128.png in Resources */,
 				BB7D10D1192B0D7600BA85AF /* InfoPlist.strings in Resources */,
-				BBC62B33194CE674004CD87B /* raeddit.png in Resources */,
 				BB7D10DF192B0D7600BA85AF /* Images.xcassets in Resources */,
 				BB7D10D7192B0D7600BA85AF /* Credits.rtf in Resources */,
 				BB7D10DD192B0D7600BA85AF /* MainMenu.xib in Resources */,

@@ -182,7 +182,7 @@
 	statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
 	[statusItem setMenu:statusMenu];
 
-	NSString *imageString = [[NSBundle mainBundle] pathForResource:@"raeddit" ofType:@"png"];
+	NSString *imageString = [[NSBundle mainBundle] pathForResource:@"raeddit64x64" ofType:@"png"];
 	NSImage * picture =  [[NSImage alloc] initWithContentsOfFile:imageString ];
 	[picture setScalesWhenResized: YES];
 	[picture setSize: NSMakeSize(24, 24)];
