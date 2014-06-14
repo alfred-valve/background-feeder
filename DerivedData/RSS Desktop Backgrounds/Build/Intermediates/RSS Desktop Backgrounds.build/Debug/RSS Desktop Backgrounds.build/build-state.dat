@@ -1,0 +1,1115 @@
+TRSS Desktop Backgrounds
+v6
+r1
+cCheck dependencies
+cProcessPCH /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/PrecompiledHeaders/RSS\ Desktop\ Backgrounds-Prefix-bnqpdhpeoatdnphegjarhklqkxst/RSS\ Desktop\ Backgrounds-Prefix.pch.pch RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/HTMLNode.o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/HTMLNode.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/HTMLParser.o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/HTMLParser.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/NSDate+InternetDateTime.o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/NSDate+InternetDateTime.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/AppDelegate.o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/AppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/main.o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/GDataXMLNode.o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/GDataXMLNode.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/Reachability.o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/Reachability.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/MacOS/RSS\ Desktop\ Backgrounds normal x86_64
+cCopyStringsFile /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources/en.lproj/InfoPlist.strings RSS\ Desktop\ Backgrounds/en.lproj/InfoPlist.strings
+cCpResource /Users/alfred/Downloads/raeddit.png DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources/raeddit.png
+cCpResource RSS\ Desktop\ Backgrounds/en.lproj/Credits.rtf DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources/en.lproj/Credits.rtf
+cCompileXIB /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/Base.lproj/MainMenu.xib
+cCompileAssetCatalog /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/Images.xcassets
+cProcessInfoPlistFile /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Info.plist /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds-Info.plist
+cTouch /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c000000005366688800000000000000AA
+t1399220360
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c000000005268935F000000000000044C
+t1382585183
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000531E754400000000000001DE
+t1394505028
+s478
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/AppKit
+c00000000531E75450000000000268434
+t1394505029
+s2524212
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+c000000005268935F0000000000007D5C
+t1382585183
+s32092
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS
+c00000000531E75440000000000020D64
+t1394505028
+s134500
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync
+c000000005268935F000000000001B3B8
+t1382585183
+s111544
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices
+c00000000531E75440000000000034FAC
+t1394505028
+s217004
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis
+c000000005268935F000000000000CB08
+t1382585183
+s51976
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
+c000000005268935F000000000002C5F4
+t1382585183
+s181748
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
+c000000005268935F000000000002B9A8
+t1382585183
+s178600
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
+c00000000531E75440000000000011EF8
+t1394505028
+s73464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c00000000531E754400000000000598A8
+t1394505028
+s366760
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+c0000000052689360000000000000253C
+t1382585184
+s9532
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+c00000000531E7545000000000004C7C4
+t1394505029
+s313284
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c00000000531E75450000000000085C70
+t1394505029
+s547952
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000531E7545000000000008B334
+t1394505029
+s570164
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/CoreServices
+c0000000052689360000000000000979C
+t1382585184
+s38812
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+c000000005268936000000000000223B4
+t1382585184
+s140212
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+c00000000531E75450000000000071CA8
+t1394505029
+s466088
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+c00000000526893600000000000017E1C
+t1382585184
+s97820
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+c00000000531E7545000000000004F090
+t1394505029
+s323728
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+c00000000531E7545000000000003AA48
+t1394505029
+s240200
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+c00000000531E754500000000000383CC
+t1394505029
+s230348
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+c0000000052689360000000000001B66C
+t1382585184
+s112236
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+c00000000531E75450000000000030448
+t1394505029
+s197704
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c00000000526893600000000000017D00
+t1382585184
+s97536
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/DiskArbitration.framework/DiskArbitration
+c00000000531E7545000000000000B27C
+t1394505029
+s45692
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000531E754500000000000C9E38
+t1394505029
+s826936
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/IOKit.framework/IOKit
+c00000000531E7545000000000004426C
+t1394505029
+s279148
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/IOSurface.framework/IOSurface
+c0000000052689361000000000000A9A0
+t1382585185
+s43424
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+c00000000531E754500000000000394B0
+t1394505029
+s234672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL
+c00000000531E7545000000000000BB7C
+t1394505029
+s47996
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
+c00000000531E754500000000000211A0
+t1394505029
+s135584
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib
+c00000000531E75450000000000005F00
+t1394505029
+s24320
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c00000000531E75450000000000055BC0
+t1394505029
+s351168
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework/Versions/A/Frameworks/CoreImage.framework/Versions/A/CoreImage
+c00000000531E75450000000000056FB4
+t1394505029
+s356276
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework/Versions/A/Frameworks/ScalableUserInterface.framework/Versions/A/ScalableUserInterface
+c0000000052689363000000000000D484
+t1382585187
+s54404
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Security.framework/Security
+c00000000531E754500000000000762B4
+t1394505029
+s484020
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c00000000531E754500000000000378BC
+t1394505029
+s227516
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/HTMLparser.h
+c000000005268936A00000000000024B6
+t1382585194
+s9398
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/HTMLtree.h
+c000000005268936A0000000000000E3E
+t1382585194
+s3646
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/SAX.h
+c000000005268936A00000000000010F5
+t1382585194
+s4341
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/SAX2.h
+c000000005268936A000000000000130E
+t1382585194
+s4878
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/dict.h
+c000000005268936A0000000000000732
+t1382585194
+s1842
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/encoding.h
+c000000005268936A000000000000208C
+t1382585194
+s8332
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/entities.h
+c000000005268936A000000000000125F
+t1382585194
+s4703
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/globals.h
+c000000005268936A000000000000393B
+t1382585194
+s14651
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/hash.h
+c000000005268936A000000000000195C
+t1382585194
+s6492
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/list.h
+c000000005268936A0000000000000D26
+t1382585194
+s3366
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/parser.h
+c000000005268936A0000000000009B27
+t1382585194
+s39719
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/threads.h
+c000000005268936A000000000000073C
+t1382585194
+s1852
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/tree.h
+c000000005268936A00000000000093D3
+t1382585194
+s37843
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/valid.h
+c000000005268936A0000000000003536
+t1382585194
+s13622
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xlink.h
+c000000005268936A00000000000013B0
+t1382585194
+s5040
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlIO.h
+c000000005268936A0000000000002977
+t1382585194
+s10615
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlautomata.h
+c000000005268936A0000000000000F74
+t1382585194
+s3956
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlerror.h
+c000000005268936A0000000000008FC3
+t1382585194
+s36803
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlexports.h
+c000000005268936A0000000000000F50
+t1382585194
+s3920
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlmemory.h
+c000000005268936A0000000000001739
+t1382585194
+s5945
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlregexp.h
+c000000005268936A0000000000001552
+t1382585194
+s5458
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlstring.h
+c000000005268936A000000000000155D
+t1382585194
+s5469
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlversion.h
+c000000005268936A0000000000001F2B
+t1382585194
+s7979
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xpath.h
+c000000005268936A000000000000400E
+t1382585194
+s16398
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xpathInternals.h
+c000000005268936A0000000000004B99
+t1382585194
+s19353
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+c00000000531E7547000000000000681C
+t1394505031
+s26652
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.dylib
+c000000005268936B0000000000014EF8
+t1382585195
+s85752
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libxml2.dylib
+c000000005268936B000000000003A860
+t1382585195
+s239712
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+c000000005268936B0000000000004734
+t1382585195
+s18228
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+c000000005268936B000000000000FC6C
+t1382585195
+s64620
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+c000000005268936B000000000000F6A0
+t1382585195
+s63136
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+c000000005268936B0000000000006254
+t1382585195
+s25172
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+c000000005268936B000000000000E0F8
+t1382585195
+s57592
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+c00000000531E7547000000000000D6DC
+t1394505031
+s55004
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+c00000000531E75470000000000006308
+t1394505031
+s25352
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+c000000005268936B0000000000004050
+t1382585195
+s16464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+c00000000531E75470000000000008570
+t1394505031
+s34160
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+c000000005268936B0000000000005EA0
+t1382585195
+s24224
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+c000000005268936B0000000000005FAC
+t1382585195
+s24492
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+c000000005268936B0000000000004440
+t1382585195
+s17472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+c000000005268936B000000000000AA28
+t1382585195
+s43560
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+c000000005268936B0000000000003E2C
+t1382585195
+s15916
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+c00000000531E75470000000000030B04
+t1394505031
+s199428
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+c00000000531E75470000000000005E54
+t1394505031
+s24148
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+c00000000531E75470000000000006A90
+t1394505031
+s27280
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+c000000005268936B00000000000178AC
+t1382585195
+s96428
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+c00000000531E7547000000000001ADC8
+t1394505031
+s110024
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+c000000005268936B000000000001028C
+t1382585195
+s66188
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+c00000000531E75470000000000008800
+t1394505031
+s34816
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+c000000005268936B0000000000011090
+t1382585195
+s69776
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+c000000005268936B000000000000882C
+t1382585195
+s34860
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+c00000000531E754700000000000067AC
+t1394505031
+s26540
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+c000000005268936B0000000000008DEC
+t1382585195
+s36332
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+c00000000531E75470000000000004C08
+t1394505031
+s19464
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+c00000000531E75470000000000002428
+t1394505031
+s9256
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+c000000005268936B000000000000439C
+t1382585195
+s17308
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+c000000005268936B0000000000006768
+t1382585195
+s26472
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+c00000000531E754700000000000172F4
+t1394505031
+s94964
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c00000000531E75470000000000000ADC
+t1394505031
+s2780
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+c00000000536668580000000000001770
+t1399220312
+s6000
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/PrecompiledHeaders/RSS Desktop Backgrounds-Prefix-bnqpdhpeoatdnphegjarhklqkxst/RSS Desktop Backgrounds-Prefix.pch.pch
+t1400568017
+s118988
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/AppDelegate.o
+t1402779737
+s132596
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/GDataXMLNode.o
+t1402779227
+s125112
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/HTMLNode.o
+t1400568017
+s43048
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/HTMLParser.o
+t1400568017
+s22188
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/NSDate+InternetDateTime.o
+t1400568017
+s17752
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/RSS Desktop Backgrounds.LinkFileList
+c00000000539CB2D900000000000005C8
+t1402778329
+s1480
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/Reachability.o
+t1402779686
+s24368
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/main.o
+t1400568017
+s3448
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/assetcatalog_dependencies.txt
+t1400568017
+s392
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/assetcatalog_generated_info.plist
+t1400568017
+s181
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app
+t1402779737
+s102
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app/Contents/Info.plist
+t1400568017
+s1449
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app/Contents/MacOS/RSS Desktop Backgrounds
+t1402779737
+s146316
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app/Contents/PkgInfo
+t1400568017
+s8
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app/Contents/Resources/Base.lproj/MainMenu.nib
+t1402777454
+s22666
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app/Contents/Resources/en.lproj/Credits.rtf
+t1400568017
+s436
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app/Contents/Resources/en.lproj/InfoPlist.strings
+t1400568017
+s92
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app/Contents/Resources/raeddit.png
+t1402777454
+s4740
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/AppDelegate.h
+c00000000539CB72F0000000000000656
+t1402779439
+s1622
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/AppDelegate.m
+c00000000539CB8590000000000003C56
+t1402779737
+s15446
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/Base.lproj/MainMenu.xib
+c00000000539CAF06000000000000414B
+t1402777350
+s16715
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/GDataXMLNode.h
+c00000000537AE32A0000000000001C3E
+t1400562474
+s7230
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/GDataXMLNode.m
+c00000000539CB65B000000000000C837
+t1402779227
+s51255
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/HTMLNode.h
+c00000000514EF13E0000000000000A8B
+t1364128062
+s2699
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/HTMLNode.m
+c00000000514EF13E000000000000262B
+t1364128062
+s9771
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/HTMLParser.h
+c00000000514EF13E0000000000000296
+t1364128062
+s662
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/HTMLParser.m
+c00000000514EF13E000000000000098A
+t1364128062
+s2442
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/Images.xcassets
+c00000000537AD5F60000000000000066
+t1400559094
+s102
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/NSDate+InternetDateTime.h
+c000000004D1A2CCF0000000000000262
+t1293561039
+s610
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/NSDate+InternetDateTime.m
+c00000000537AE6C300000000000011ED
+t1400563395
+s4589
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/RSS Desktop Backgrounds-Info.plist
+c00000000537AD5F60000000000000442
+t1400559094
+s1090
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/RSS Desktop Backgrounds-Prefix.pch
+c00000000537AD5F600000000000000A9
+t1400559094
+s169
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/Reachability.h
+c0000000052F163880000000000000E8A
+t1391551368
+s3722
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/Reachability.m
+c00000000539CB8260000000000002456
+t1402779686
+s9302
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/en.lproj/Credits.rtf
+c00000000537AD5F600000000000001B4
+t1400559094
+s436
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/en.lproj/InfoPlist.strings
+c00000000537AD5F6000000000000002D
+t1400559094
+s45
+
+N/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/main.m
+c00000000537AD5F600000000000000FC
+t1400559094
+s252
+
+N/Users/alfred/Downloads/raeddit.png
+c00000000539CAE3C0000000000001284
+t1402777148
+s4740
+
+CBuild AST from /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/AppDelegate.m
+r0
+
+CBuild AST from /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/GDataXMLNode.m
+r0
+
+CBuild AST from /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/HTMLNode.m
+r0
+
+CBuild AST from /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/HTMLParser.m
+r0
+
+CBuild AST from /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/NSDate+InternetDateTime.m
+r0
+
+CBuild AST from /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/Reachability.m
+r0
+
+CBuild AST from /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesc557afdaef4cb941^1de6afdaef4cb941^---0#1#1#--18"Check dependencies36"D35D5D17-28AE-4DE8-988E-6EB9E9BEADC1-
+
+CCompileAssetCatalog /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/Images.xcassets
+s422260817.543651
+e422260817.910732
+r1
+xCompileAssetCatalog
+x/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app/Contents/Resources
+x/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/Images.xcassets
+o/* com.apple.actool.compilation-results */
+o/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app/Contents/Resources/Assets.car
+o/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/assetcatalog_generated_info.plist
+o
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection169"CompileAssetCatalog DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources RSS\ Desktop\ Backgrounds/Images.xcassets169"CompileAssetCatalog DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources RSS\ Desktop\ Backgrounds/Images.xcassets06498b51302bb941^d926e951302bb941^-421"/* com.apple.actool.compilation-results *//Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app/Contents/Resources/Assets.car/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/assetcatalog_generated_info.plist-0#0#1#-19%DVTDocumentLocation2@108"file:///Users/alfred/Desktop/myapps/RSS%20Desktop%20Backgrounds/RSS%20Desktop%20Backgrounds/Images.xcassets/0000000000000000^1194"CompileAssetCatalog DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources RSS\ Desktop\ Backgrounds/Images.xcassets    cd "/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds"    /Applications/Xcode.app/Contents/Developer/usr/bin/actool --output-format human-readable-text --notices --warnings --export-dependency-info /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/assetcatalog_dependencies.txt --output-partial-info-plist /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/assetcatalog_generated_info.plist --app-icon AppIcon --platform macosx --minimum-deployment-target 10.9 --target-device mac --compile /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/Images.xcassets36"D814BBB8-2C2E-403D-8EBD-5D66077D1C41-
+bEC03AF73-1A6D-409F-B646-993F2C66C59A
+
+CCompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/AppDelegate.o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/AppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s424472537.511610
+e424472537.779155
+r1
+xCompileC
+xDerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/AppDelegate.o
+x/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/AppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/AppDelegate.m
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/AppDelegate.h
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/Reachability.h
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/GDataXMLNode.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/tree.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlversion.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlexports.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlstring.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlregexp.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/dict.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlmemory.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/threads.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/globals.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/parser.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/hash.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/valid.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlerror.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/list.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlautomata.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/entities.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/encoding.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlIO.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/SAX.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xlink.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/SAX2.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xpath.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xpathInternals.h
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/NSDate+InternetDateTime.h
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/HTMLParser.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/HTMLparser.h
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/HTMLNode.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile /Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/AppDelegate.m282"CompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/AppDelegate.o RSS\ Desktop\ Backgrounds/AppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler931d83d9ef4cb941^616bced9ef4cb941^---0#0#1#-19%DVTDocumentLocation2@105"file:///Users/alfred/Desktop/myapps/RSS%20Desktop%20Backgrounds/RSS%20Desktop%20Backgrounds/AppDelegate.m0000000000000000^4559"CompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/AppDelegate.o RSS\ Desktop\ Backgrounds/AppDelegate.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-generated-files.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-own-target-headers.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-all-target-headers.hmap -iquote /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-project-headers.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/DerivedSources/x86_64 -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/DerivedSources -F/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug -include /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/PrecompiledHeaders/RSS\ Desktop\ Backgrounds-Prefix-bnqpdhpeoatdnphegjarhklqkxst/RSS\ Desktop\ Backgrounds-Prefix.pch -MMD -MT dependencies -MF /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/AppDelegate.d --serialize-diagnostics /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/AppDelegate.dia -c /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/AppDelegate.m -o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/AppDelegate.o36"0DF16D8A-D731-4B62-9230-80D370772A13-
+b89824C27-2F11-4017-BF3A-72CA24E69344
+
+CCompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/GDataXMLNode.o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/GDataXMLNode.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s424472027.557270
+e424472027.963662
+r1
+xCompileC
+xDerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/GDataXMLNode.o
+x/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/GDataXMLNode.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/GDataXMLNode.m
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/GDataXMLNode.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/tree.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlversion.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlexports.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlstring.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlregexp.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/dict.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlmemory.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/threads.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/globals.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/parser.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/hash.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/valid.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlerror.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/list.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlautomata.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/entities.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/encoding.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlIO.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/SAX.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xlink.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/SAX2.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xpath.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xpathInternals.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Compile /Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/GDataXMLNode.m284"CompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/GDataXMLNode.o RSS\ Desktop\ Backgrounds/GDataXMLNode.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler81cc8edbed4cb941^ec85fadbed4cb941^---0#0#1#-19%DVTDocumentLocation2@106"file:///Users/alfred/Desktop/myapps/RSS%20Desktop%20Backgrounds/RSS%20Desktop%20Backgrounds/GDataXMLNode.m0000000000000000^4565"CompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/GDataXMLNode.o RSS\ Desktop\ Backgrounds/GDataXMLNode.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-generated-files.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-own-target-headers.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-all-target-headers.hmap -iquote /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-project-headers.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/DerivedSources/x86_64 -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/DerivedSources -F/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug -include /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/PrecompiledHeaders/RSS\ Desktop\ Backgrounds-Prefix-bnqpdhpeoatdnphegjarhklqkxst/RSS\ Desktop\ Backgrounds-Prefix.pch -MMD -MT dependencies -MF /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/GDataXMLNode.d --serialize-diagnostics /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/GDataXMLNode.dia -c /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/GDataXMLNode.m -o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/GDataXMLNode.o36"213EFB9C-ED8B-4852-AEA8-82CDDBA4F361-
+b78A57D58-1473-48A7-B6C3-8F06C86B3F0A
+
+CCompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/HTMLNode.o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/HTMLNode.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s422260817.031204
+e422260817.242734
+r1
+xCompileC
+xDerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/HTMLNode.o
+x/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/HTMLNode.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/HTMLNode.m
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/HTMLNode.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/HTMLparser.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlversion.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlexports.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/parser.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/tree.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlstring.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlregexp.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/dict.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/hash.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/valid.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlerror.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/list.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlautomata.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/entities.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/encoding.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlIO.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/globals.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/SAX.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xlink.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/SAX2.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlmemory.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/threads.h
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/HTMLParser.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/HTMLtree.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Compile /Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/HTMLNode.m276"CompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/HTMLNode.o RSS\ Desktop\ Backgrounds/HTMLNode.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerc91f0851302bb941^ab243e51302bb941^---0#0#1#-19%DVTDocumentLocation2@102"file:///Users/alfred/Desktop/myapps/RSS%20Desktop%20Backgrounds/RSS%20Desktop%20Backgrounds/HTMLNode.m0000000000000000^4541"CompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/HTMLNode.o RSS\ Desktop\ Backgrounds/HTMLNode.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-generated-files.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-own-target-headers.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-all-target-headers.hmap -iquote /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-project-headers.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/DerivedSources/x86_64 -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/DerivedSources -F/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug -include /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/PrecompiledHeaders/RSS\ Desktop\ Backgrounds-Prefix-bnqpdhpeoatdnphegjarhklqkxst/RSS\ Desktop\ Backgrounds-Prefix.pch -MMD -MT dependencies -MF /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/HTMLNode.d --serialize-diagnostics /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/HTMLNode.dia -c /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/HTMLNode.m -o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/HTMLNode.o36"08CB5583-5831-4EB0-8089-80865142841E-
+bEC03AF73-1A6D-409F-B646-993F2C66C59A
+
+CCompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/HTMLParser.o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/HTMLParser.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s422260817.031365
+e422260817.224582
+r1
+xCompileC
+xDerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/HTMLParser.o
+x/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/HTMLParser.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/HTMLParser.m
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/HTMLParser.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/HTMLparser.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlversion.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlexports.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/parser.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/tree.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlstring.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlregexp.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/dict.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/hash.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/valid.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlerror.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/list.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlautomata.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/entities.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/encoding.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlIO.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/globals.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/SAX.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xlink.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/SAX2.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/xmlmemory.h
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2/libxml/threads.h
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/HTMLNode.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/HTMLParser.m280"CompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/HTMLParser.o RSS\ Desktop\ Backgrounds/HTMLParser.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler5a290851302bb941^c3803951302bb941^---0#0#1#-19%DVTDocumentLocation2@104"file:///Users/alfred/Desktop/myapps/RSS%20Desktop%20Backgrounds/RSS%20Desktop%20Backgrounds/HTMLParser.m0000000000000000^4553"CompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/HTMLParser.o RSS\ Desktop\ Backgrounds/HTMLParser.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-generated-files.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-own-target-headers.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-all-target-headers.hmap -iquote /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-project-headers.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/DerivedSources/x86_64 -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/DerivedSources -F/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug -include /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/PrecompiledHeaders/RSS\ Desktop\ Backgrounds-Prefix-bnqpdhpeoatdnphegjarhklqkxst/RSS\ Desktop\ Backgrounds-Prefix.pch -MMD -MT dependencies -MF /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/HTMLParser.d --serialize-diagnostics /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/HTMLParser.dia -c /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/HTMLParser.m -o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/HTMLParser.o36"27E3228D-8003-4991-A79A-F09E9521CD7F-
+bEC03AF73-1A6D-409F-B646-993F2C66C59A
+
+CCompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/NSDate+InternetDateTime.o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/NSDate+InternetDateTime.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s422260817.031679
+e422260817.150678
+r1
+xCompileC
+xDerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/NSDate+InternetDateTime.o
+x/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/NSDate+InternetDateTime.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/NSDate+InternetDateTime.m
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/NSDate+InternetDateTime.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compile /Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/NSDate+InternetDateTime.m306"CompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/NSDate+InternetDateTime.o RSS\ Desktop\ Backgrounds/NSDate+InternetDateTime.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerf33c0851302bb941^3e922651302bb941^---0#0#1#-19%DVTDocumentLocation2@117"file:///Users/alfred/Desktop/myapps/RSS%20Desktop%20Backgrounds/RSS%20Desktop%20Backgrounds/NSDate+InternetDateTime.m0000000000000000^4631"CompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/NSDate+InternetDateTime.o RSS\ Desktop\ Backgrounds/NSDate+InternetDateTime.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-generated-files.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-own-target-headers.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-all-target-headers.hmap -iquote /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-project-headers.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/DerivedSources/x86_64 -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/DerivedSources -F/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug -include /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/PrecompiledHeaders/RSS\ Desktop\ Backgrounds-Prefix-bnqpdhpeoatdnphegjarhklqkxst/RSS\ Desktop\ Backgrounds-Prefix.pch -MMD -MT dependencies -MF /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/NSDate+InternetDateTime.d --serialize-diagnostics /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/NSDate+InternetDateTime.dia -c /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/NSDate+InternetDateTime.m -o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/NSDate+InternetDateTime.o36"969D1CC0-CABD-4C2C-A4C2-E09D92D8BDFC-
+bEC03AF73-1A6D-409F-B646-993F2C66C59A
+
+CCompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/Reachability.o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/Reachability.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s424472486.573184
+e424472486.686335
+r1
+xCompileC
+xDerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/Reachability.o
+x/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/Reachability.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/Reachability.m
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/Reachability.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Compile /Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/Reachability.m284"CompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/Reachability.o RSS\ Desktop\ Backgrounds/Reachability.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler26e192a6ef4cb941^b457c7a6ef4cb941^---0#0#1#-19%DVTDocumentLocation2@106"file:///Users/alfred/Desktop/myapps/RSS%20Desktop%20Backgrounds/RSS%20Desktop%20Backgrounds/Reachability.m0000000000000000^4565"CompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/Reachability.o RSS\ Desktop\ Backgrounds/Reachability.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-generated-files.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-own-target-headers.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-all-target-headers.hmap -iquote /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-project-headers.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/DerivedSources/x86_64 -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/DerivedSources -F/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug -include /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/PrecompiledHeaders/RSS\ Desktop\ Backgrounds-Prefix-bnqpdhpeoatdnphegjarhklqkxst/RSS\ Desktop\ Backgrounds-Prefix.pch -MMD -MT dependencies -MF /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/Reachability.d --serialize-diagnostics /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/Reachability.dia -c /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/Reachability.m -o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/Reachability.o36"184E7FDB-A0D7-4B1A-9344-CF333E7B99EF-
+bEFF070DE-7911-49F8-95D0-A3B568A7324F
+
+CCompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/main.o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s422260817.151172
+e422260817.241507
+r1
+xCompileC
+xDerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/main.o
+x/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/main.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/main.m268"CompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/main.o RSS\ Desktop\ Backgrounds/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler49d52651302bb941^a6d43d51302bb941^---0#0#1#-19%DVTDocumentLocation2@98"file:///Users/alfred/Desktop/myapps/RSS%20Desktop%20Backgrounds/RSS%20Desktop%20Backgrounds/main.m0000000000000000^4517"CompileC DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/main.o RSS\ Desktop\ Backgrounds/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-generated-files.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-own-target-headers.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-all-target-headers.hmap -iquote /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-project-headers.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/DerivedSources/x86_64 -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/DerivedSources -F/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug -include /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/PrecompiledHeaders/RSS\ Desktop\ Backgrounds-Prefix-bnqpdhpeoatdnphegjarhklqkxst/RSS\ Desktop\ Backgrounds-Prefix.pch -MMD -MT dependencies -MF /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/main.dia -c /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/main.m -o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/main.o36"64440EDD-92AF-4822-BEE3-4198ECDD18F6-
+bEC03AF73-1A6D-409F-B646-993F2C66C59A
+
+CCompileXIB /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/Base.lproj/MainMenu.xib
+s424470254.724426
+e424470254.806963
+r1
+xCompileXIB
+x/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/Base.lproj/MainMenu.xib
+o/* com.apple.ibtool.document.notices */
+o/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/Base.lproj/MainMenu.xib:tvc-dO-Qdl: note: View is clipping its content [13]
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compiling /Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/Base.lproj/MainMenu.xib60"CompileXIB RSS\ Desktop\ Backgrounds/Base.lproj/MainMenu.xib8b8db9eee64cb941^3e96ceeee64cb941^-188"/* com.apple.ibtool.document.notices *//Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/Base.lproj/MainMenu.xib:tvc-dO-Qdl: note: View is clipping its content1(21%IDEActivityLogMessage2@28"View is clipping its content-424470254#18446744073709551615#0#-0#-23%DVTTextDocumentLocation3@115"file:///Users/alfred/Desktop/myapps/RSS%20Desktop%20Backgrounds/RSS%20Desktop%20Backgrounds/Base.lproj/MainMenu.xib0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#15"Clipped Content--0#0#1#-19%DVTDocumentLocation4@115"file:///Users/alfred/Desktop/myapps/RSS%20Desktop%20Backgrounds/RSS%20Desktop%20Backgrounds/Base.lproj/MainMenu.xib0000000000000000^676"CompileXIB RSS\ Desktop\ Backgrounds/Base.lproj/MainMenu.xib    cd "/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 10.9 --output-format human-readable-text --compile /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources/Base.lproj/MainMenu.nib /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/Base.lproj/MainMenu.xib36"EFC1BA77-CFB8-4E36-9589-2F4248081EA8-
+b86F3CAAA-33FF-432B-A2F1-E76BC9A103FF
+
+CCopyStringsFile /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources/en.lproj/InfoPlist.strings RSS\ Desktop\ Backgrounds/en.lproj/InfoPlist.strings
+s422260817.541574
+e422260817.544196
+r1
+xCopyStringsFile
+x/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app/Contents/Resources/en.lproj/InfoPlist.strings
+xRSS Desktop Backgrounds/en.lproj/InfoPlist.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Copy RSS Desktop Backgrounds/en.lproj/InfoPlist.strings203"CopyStringsFile DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources/en.lproj/InfoPlist.strings RSS\ Desktop\ Backgrounds/en.lproj/InfoPlist.stringsf5b98a51302bb941^b9528b51302bb941^---0#0#1#-19%DVTDocumentLocation2@118"file:///Users/alfred/Desktop/myapps/RSS%20Desktop%20Backgrounds/RSS%20Desktop%20Backgrounds/en.lproj/InfoPlist.strings0000000000000000^584"CopyStringsFile DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources/en.lproj/InfoPlist.strings RSS\ Desktop\ Backgrounds/en.lproj/InfoPlist.strings    cd "/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding UTF-16 --outdir /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources/en.lproj -- RSS\ Desktop\ Backgrounds/en.lproj/InfoPlist.strings36"CD9E3E07-EBBD-4AEA-8D92-111A354A0B1F-
+bEC03AF73-1A6D-409F-B646-993F2C66C59A
+
+CCpResource /Users/alfred/Downloads/raeddit.png DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources/raeddit.png
+s424470254.723546
+e424470254.754045
+r1
+xCpResource
+x/Users/alfred/Downloads/raeddit.png
+xDerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app/Contents/Resources/raeddit.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection120"Copy DerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app/Contents/Resources/raeddit.png166"CpResource /Users/alfred/Downloads/raeddit.png DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources/raeddit.pnge162b9eee64cb941^fa0bc1eee64cb941^---0#0#1#-19%DVTDocumentLocation2@187"file:///Users/alfred/Desktop/myapps/RSS%20Desktop%20Backgrounds/DerivedData/RSS%20Desktop%20Backgrounds/Build/Products/Debug/RSS%20Desktop%20Backgrounds.app/Contents/Resources/raeddit.png0034d87cdcffdf42^540"CpResource /Users/alfred/Downloads/raeddit.png DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources/raeddit.png    cd "/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/alfred/Downloads/raeddit.png /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources36"E3B1A182-9125-4645-90A5-7DB8F92517D5-
+b86F3CAAA-33FF-432B-A2F1-E76BC9A103FF
+
+CCpResource RSS\ Desktop\ Backgrounds/en.lproj/Credits.rtf DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources/en.lproj/Credits.rtf
+s422260817.541752
+e422260817.544564
+r1
+xCpResource
+xRSS Desktop Backgrounds/en.lproj/Credits.rtf
+xDerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app/Contents/Resources/en.lproj/Credits.rtf
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection129"Copy DerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app/Contents/Resources/en.lproj/Credits.rtf186"CpResource RSS\ Desktop\ Backgrounds/en.lproj/Credits.rtf DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources/en.lproj/Credits.rtf09c58a51302bb941^49648b51302bb941^---0#0#1#-19%DVTDocumentLocation2@196"file:///Users/alfred/Desktop/myapps/RSS%20Desktop%20Backgrounds/DerivedData/RSS%20Desktop%20Backgrounds/Build/Products/Debug/RSS%20Desktop%20Backgrounds.app/Contents/Resources/en.lproj/Credits.rtf0034d87cdcffdf42^635"CpResource RSS\ Desktop\ Backgrounds/en.lproj/Credits.rtf DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources/en.lproj/Credits.rtf    cd "/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/en.lproj/Credits.rtf /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Resources/en.lproj36"3B47792D-FA14-4A20-B9F2-71CF7F0E5EAB-
+bEC03AF73-1A6D-409F-B646-993F2C66C59A
+
+CLd /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/MacOS/RSS\ Desktop\ Backgrounds normal x86_64
+s424472537.784267
+e424472537.865201
+r1
+xLd
+x/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app/Contents/MacOS/RSS Desktop Backgrounds
+xnormal
+xx86_64
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/RSS Desktop Backgrounds.LinkFileList
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/HTMLNode.o
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/HTMLParser.o
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/NSDate+InternetDateTime.o
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/Reachability.o
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/AppDelegate.o
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/main.o
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/RSS Desktop Backgrounds.build/Debug/RSS Desktop Backgrounds.build/Objects-normal/x86_64/GDataXMLNode.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libxml2.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/IOKit.framework/IOKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ImageIO.framework/ImageIO
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/IOSurface.framework/IOSurface
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/CoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/OpenGL
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/DiskArbitration.framework/DiskArbitration
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Security.framework/Security
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/AppKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework/Versions/A/Frameworks/CoreImage.framework/Versions/A/CoreImage
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework/Versions/A/Frameworks/ScalableUserInterface.framework/Versions/A/ScalableUserInterface
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection181"Link /Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app/Contents/MacOS/RSS Desktop Backgrounds146"Ld DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/MacOS/RSS\ Desktop\ Backgrounds normal x86_6409dec8d9ef4cb941^9773e5d9ef4cb941^---0#0#1#--1510"Ld DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/MacOS/RSS\ Desktop\ Backgrounds normal x86_64    cd "/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds"    export MACOSX_DEPLOYMENT_TARGET=10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug -F/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug -filelist /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/RSS\ Desktop\ Backgrounds.LinkFileList -mmacosx-version-min=10.9 -fobjc-arc -fobjc-link-runtime -lxml2 -framework Cocoa -Xlinker -dependency_info -Xlinker /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/Objects-normal/x86_64/RSS\ Desktop\ Backgrounds_dependency_info.dat -o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/MacOS/RSS\ Desktop\ Backgrounds36"09FD44EE-0D5A-49AF-93AC-CAA47F18F087-
+b89824C27-2F11-4017-BF3A-72CA24E69344
+
+CProcessInfoPlistFile /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Info.plist /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds-Info.plist
+s422260817.911737
+e422260817.915245
+r1
+xProcessInfoPlistFile
+x/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app/Contents/Info.plist
+x/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/RSS Desktop Backgrounds-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Process /Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/RSS Desktop Backgrounds-Info.plist192"ProcessInfoPlistFile DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Info.plist RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds-Info.plist027ee951302bb941^2b4dea51302bb941^---0#0#1#-19%DVTDocumentLocation2@130"file:///Users/alfred/Desktop/myapps/RSS%20Desktop%20Backgrounds/RSS%20Desktop%20Backgrounds/RSS%20Desktop%20Backgrounds-Info.plist0000000000000000^1020"ProcessInfoPlistFile DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Info.plist RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds-Info.plist    cd "/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds"    builtin-infoPlistUtility /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds-Info.plist -genpkginfo /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/PkgInfo -expandbuildsettings -platform macosx -additionalcontentfile /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/assetcatalog_generated_info.plist -o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app/Contents/Info.plist36"81D75188-8D1E-414C-BF17-050EC30040FF-
+bEC03AF73-1A6D-409F-B646-993F2C66C59A
+
+CProcessPCH /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/PrecompiledHeaders/RSS\ Desktop\ Backgrounds-Prefix-bnqpdhpeoatdnphegjarhklqkxst/RSS\ Desktop\ Backgrounds-Prefix.pch.pch RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s422260813.453552
+e422260817.027101
+r1
+xProcessPCH
+x/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Intermediates/PrecompiledHeaders/RSS Desktop Backgrounds-Prefix-bnqpdhpeoatdnphegjarhklqkxst/RSS Desktop Backgrounds-Prefix.pch.pch
+xRSS Desktop Backgrounds/RSS Desktop Backgrounds-Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/RSS Desktop Backgrounds/RSS Desktop Backgrounds-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Precompile RSS Desktop Backgrounds/RSS Desktop Backgrounds-Prefix.pch323"ProcessPCH DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/PrecompiledHeaders/RSS\ Desktop\ Backgrounds-Prefix-bnqpdhpeoatdnphegjarhklqkxst/RSS\ Desktop\ Backgrounds-Prefix.pch.pch RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerd55e744d302bb941^bff40651302bb941^---0#0#1#-19%DVTDocumentLocation2@130"file:///Users/alfred/Desktop/myapps/RSS%20Desktop%20Backgrounds/RSS%20Desktop%20Backgrounds/RSS%20Desktop%20Backgrounds-Prefix.pch0000000000000000^4434"ProcessPCH DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/PrecompiledHeaders/RSS\ Desktop\ Backgrounds-Prefix-bnqpdhpeoatdnphegjarhklqkxst/RSS\ Desktop\ Backgrounds-Prefix.pch.pch RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds"    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -Wno-sign-conversion -iquote /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-generated-files.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-own-target-headers.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-all-target-headers.hmap -iquote /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/RSS\ Desktop\ Backgrounds-project-headers.hmap -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2 -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/DerivedSources/x86_64 -I/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/RSS\ Desktop\ Backgrounds.build/Debug/RSS\ Desktop\ Backgrounds.build/DerivedSources -F/Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug --serialize-diagnostics /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/PrecompiledHeaders/RSS\ Desktop\ Backgrounds-Prefix-bnqpdhpeoatdnphegjarhklqkxst/RSS\ Desktop\ Backgrounds-Prefix.pch.dia -MMD -MT dependencies -MF /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/PrecompiledHeaders/RSS\ Desktop\ Backgrounds-Prefix-bnqpdhpeoatdnphegjarhklqkxst/RSS\ Desktop\ Backgrounds-Prefix.pch.d -c /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds-Prefix.pch -o /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Intermediates/PrecompiledHeaders/RSS\ Desktop\ Backgrounds-Prefix-bnqpdhpeoatdnphegjarhklqkxst/RSS\ Desktop\ Backgrounds-Prefix.pch.pch36"AD483999-D9F6-4100-BACE-2A3F21B396CC-
+bEC03AF73-1A6D-409F-B646-993F2C66C59A
+
+CProcessPCH /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Index/PrecompiledHeaders/RSS\ Desktop\ Backgrounds-Prefix-fcupgyzbpczqaiagmoatxosfgugn_ast/RSS\ Desktop\ Backgrounds-Prefix.pch.pch RSS\ Desktop\ Backgrounds/RSS\ Desktop\ Backgrounds-Prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CTouch /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app
+s424472537.867660
+e424472537.874343
+r1
+xTouch
+x/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection143"Touch /Users/alfred/Desktop/myapps/RSS Desktop Backgrounds/DerivedData/RSS Desktop Backgrounds/Build/Products/Debug/RSS Desktop Backgrounds.app94"Touch DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.appc631ded9ef4cb941^1382e5d9ef4cb941^---0#0#1#--323"Touch DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app    cd "/Users/alfred/Desktop/myapps/RSS Desktop Backgrounds"    /usr/bin/touch -c /Users/alfred/Desktop/myapps/RSS\ Desktop\ Backgrounds/DerivedData/RSS\ Desktop\ Backgrounds/Build/Products/Debug/RSS\ Desktop\ Backgrounds.app36"65948369-51D9-4C3F-BDB8-466704F4EEA0-
+b89824C27-2F11-4017-BF3A-72CA24E69344
+

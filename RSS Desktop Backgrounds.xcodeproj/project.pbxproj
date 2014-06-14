@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB7D10C7192B0D7600BA85AF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7D10C6192B0D7600BA85AF /* Cocoa.framework */; };
+		BB7D10D1192B0D7600BA85AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB7D10CF192B0D7600BA85AF /* InfoPlist.strings */; };
+		BB7D10D3192B0D7600BA85AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7D10D2192B0D7600BA85AF /* main.m */; };
+		BB7D10D7192B0D7600BA85AF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BB7D10D5192B0D7600BA85AF /* Credits.rtf */; };
+		BB7D10DA192B0D7600BA85AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7D10D9192B0D7600BA85AF /* AppDelegate.m */; };
+		BB7D10DD192B0D7600BA85AF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB7D10DB192B0D7600BA85AF /* MainMenu.xib */; };
+		BB7D10DF192B0D7600BA85AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB7D10DE192B0D7600BA85AF /* Images.xcassets */; };
+		BB7D10E6192B0D7600BA85AF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7D10E5192B0D7600BA85AF /* XCTest.framework */; };
+		BB7D10E7192B0D7600BA85AF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7D10C6192B0D7600BA85AF /* Cocoa.framework */; };
+		BB7D10EF192B0D7600BA85AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB7D10ED192B0D7600BA85AF /* InfoPlist.strings */; };
+		BB7D10F1192B0D7600BA85AF /* RSS_Desktop_BackgroundsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7D10F0192B0D7600BA85AF /* RSS_Desktop_BackgroundsTests.m */; };
+		BB7D111C192B1A5A00BA85AF /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7D111B192B1A5A00BA85AF /* GDataXMLNode.m */; };
+		BB7D111E192B1A9800BA85AF /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7D111D192B1A9800BA85AF /* libxml2.dylib */; };
+		BB7D1121192B1E3500BA85AF /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7D1120192B1E3500BA85AF /* NSDate+InternetDateTime.m */; };
+		BB7D1126192B25A800BA85AF /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7D1123192B25A800BA85AF /* HTMLNode.m */; };
+		BB7D1127192B25A800BA85AF /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7D1125192B25A800BA85AF /* HTMLParser.m */; };
+		BBC62B33194CE674004CD87B /* raeddit.png in Resources */ = {isa = PBXBuildFile; fileRef = BBC62B32194CE674004CD87B /* raeddit.png */; };
+		BBC62B36194CEA41004CD87B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC62B35194CEA41004CD87B /* Reachability.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB7D10E8192B0D7600BA85AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7D10BB192B0D7600BA85AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB7D10C2192B0D7600BA85AF;
+			remoteInfo = "RSS Desktop Backgrounds";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB7D10C3192B0D7600BA85AF /* RSS Desktop Backgrounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RSS Desktop Backgrounds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB7D10C6192B0D7600BA85AF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BB7D10C9192B0D7600BA85AF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BB7D10CA192B0D7600BA85AF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BB7D10CB192B0D7600BA85AF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BB7D10CE192B0D7600BA85AF /* RSS Desktop Backgrounds-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RSS Desktop Backgrounds-Info.plist"; sourceTree = "<group>"; };
+		BB7D10D0192B0D7600BA85AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BB7D10D2192B0D7600BA85AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB7D10D4192B0D7600BA85AF /* RSS Desktop Backgrounds-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSS Desktop Backgrounds-Prefix.pch"; sourceTree = "<group>"; };
+		BB7D10D6192B0D7600BA85AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		BB7D10D8192B0D7600BA85AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BB7D10D9192B0D7600BA85AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BB7D10DC192B0D7600BA85AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BB7D10DE192B0D7600BA85AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BB7D10E4192B0D7600BA85AF /* RSS Desktop BackgroundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RSS Desktop BackgroundsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB7D10E5192B0D7600BA85AF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BB7D10EC192B0D7600BA85AF /* RSS Desktop BackgroundsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RSS Desktop BackgroundsTests-Info.plist"; sourceTree = "<group>"; };
+		BB7D10EE192B0D7600BA85AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BB7D10F0192B0D7600BA85AF /* RSS_Desktop_BackgroundsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSS_Desktop_BackgroundsTests.m; sourceTree = "<group>"; };
+		BB7D111A192B1A5A00BA85AF /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		BB7D111B192B1A5A00BA85AF /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		BB7D111D192B1A9800BA85AF /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		BB7D111F192B1E3500BA85AF /* NSDate+InternetDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+InternetDateTime.h"; sourceTree = "<group>"; };
+		BB7D1120192B1E3500BA85AF /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+InternetDateTime.m"; sourceTree = "<group>"; };
+		BB7D1122192B25A800BA85AF /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		BB7D1123192B25A800BA85AF /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		BB7D1124192B25A800BA85AF /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		BB7D1125192B25A800BA85AF /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
+		BBC62B32194CE674004CD87B /* raeddit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = raeddit.png; path = ../../../../Downloads/raeddit.png; sourceTree = "<group>"; };
+		BBC62B34194CEA41004CD87B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		BBC62B35194CEA41004CD87B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB7D10C0192B0D7600BA85AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7D111E192B1A9800BA85AF /* libxml2.dylib in Frameworks */,
+				BB7D10C7192B0D7600BA85AF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7D10E1192B0D7600BA85AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7D10E7192B0D7600BA85AF /* Cocoa.framework in Frameworks */,
+				BB7D10E6192B0D7600BA85AF /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB7D10BA192B0D7600BA85AF = {
+			isa = PBXGroup;
+			children = (
+				BB7D10CC192B0D7600BA85AF /* RSS Desktop Backgrounds */,
+				BB7D10EA192B0D7600BA85AF /* RSS Desktop BackgroundsTests */,
+				BB7D10C5192B0D7600BA85AF /* Frameworks */,
+				BB7D10C4192B0D7600BA85AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB7D10C4192B0D7600BA85AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB7D10C3192B0D7600BA85AF /* RSS Desktop Backgrounds.app */,
+				BB7D10E4192B0D7600BA85AF /* RSS Desktop BackgroundsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB7D10C5192B0D7600BA85AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB7D111D192B1A9800BA85AF /* libxml2.dylib */,
+				BB7D10C6192B0D7600BA85AF /* Cocoa.framework */,
+				BB7D10E5192B0D7600BA85AF /* XCTest.framework */,
+				BB7D10C8192B0D7600BA85AF /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB7D10C8192B0D7600BA85AF /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB7D10C9192B0D7600BA85AF /* AppKit.framework */,
+				BB7D10CA192B0D7600BA85AF /* CoreData.framework */,
+				BB7D10CB192B0D7600BA85AF /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BB7D10CC192B0D7600BA85AF /* RSS Desktop Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				BBC62B34194CEA41004CD87B /* Reachability.h */,
+				BBC62B35194CEA41004CD87B /* Reachability.m */,
+				BB7D1122192B25A800BA85AF /* HTMLNode.h */,
+				BB7D1123192B25A800BA85AF /* HTMLNode.m */,
+				BB7D1124192B25A800BA85AF /* HTMLParser.h */,
+				BB7D1125192B25A800BA85AF /* HTMLParser.m */,
+				BB7D111F192B1E3500BA85AF /* NSDate+InternetDateTime.h */,
+				BB7D1120192B1E3500BA85AF /* NSDate+InternetDateTime.m */,
+				BB7D111A192B1A5A00BA85AF /* GDataXMLNode.h */,
+				BB7D111B192B1A5A00BA85AF /* GDataXMLNode.m */,
+				BB7D10D8192B0D7600BA85AF /* AppDelegate.h */,
+				BB7D10D9192B0D7600BA85AF /* AppDelegate.m */,
+				BB7D10DB192B0D7600BA85AF /* MainMenu.xib */,
+				BB7D10DE192B0D7600BA85AF /* Images.xcassets */,
+				BB7D10CD192B0D7600BA85AF /* Supporting Files */,
+			);
+			path = "RSS Desktop Backgrounds";
+			sourceTree = "<group>";
+		};
+		BB7D10CD192B0D7600BA85AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBC62B32194CE674004CD87B /* raeddit.png */,
+				BB7D10CE192B0D7600BA85AF /* RSS Desktop Backgrounds-Info.plist */,
+				BB7D10CF192B0D7600BA85AF /* InfoPlist.strings */,
+				BB7D10D2192B0D7600BA85AF /* main.m */,
+				BB7D10D4192B0D7600BA85AF /* RSS Desktop Backgrounds-Prefix.pch */,
+				BB7D10D5192B0D7600BA85AF /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB7D10EA192B0D7600BA85AF /* RSS Desktop BackgroundsTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB7D10F0192B0D7600BA85AF /* RSS_Desktop_BackgroundsTests.m */,
+				BB7D10EB192B0D7600BA85AF /* Supporting Files */,
+			);
+			path = "RSS Desktop BackgroundsTests";
+			sourceTree = "<group>";
+		};
+		BB7D10EB192B0D7600BA85AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB7D10EC192B0D7600BA85AF /* RSS Desktop BackgroundsTests-Info.plist */,
+				BB7D10ED192B0D7600BA85AF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB7D10C2192B0D7600BA85AF /* RSS Desktop Backgrounds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB7D10F4192B0D7600BA85AF /* Build configuration list for PBXNativeTarget "RSS Desktop Backgrounds" */;
+			buildPhases = (
+				BB7D10BF192B0D7600BA85AF /* Sources */,
+				BB7D10C0192B0D7600BA85AF /* Frameworks */,
+				BB7D10C1192B0D7600BA85AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RSS Desktop Backgrounds";
+			productName = "RSS Desktop Backgrounds";
+			productReference = BB7D10C3192B0D7600BA85AF /* RSS Desktop Backgrounds.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB7D10E3192B0D7600BA85AF /* RSS Desktop BackgroundsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB7D10F7192B0D7600BA85AF /* Build configuration list for PBXNativeTarget "RSS Desktop BackgroundsTests" */;
+			buildPhases = (
+				BB7D10E0192B0D7600BA85AF /* Sources */,
+				BB7D10E1192B0D7600BA85AF /* Frameworks */,
+				BB7D10E2192B0D7600BA85AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB7D10E9192B0D7600BA85AF /* PBXTargetDependency */,
+			);
+			name = "RSS Desktop BackgroundsTests";
+			productName = "RSS Desktop BackgroundsTests";
+			productReference = BB7D10E4192B0D7600BA85AF /* RSS Desktop BackgroundsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB7D10BB192B0D7600BA85AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Alfred;
+				TargetAttributes = {
+					BB7D10E3192B0D7600BA85AF = {
+						TestTargetID = BB7D10C2192B0D7600BA85AF;
+					};
+				};
+			};
+			buildConfigurationList = BB7D10BE192B0D7600BA85AF /* Build configuration list for PBXProject "RSS Desktop Backgrounds" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB7D10BA192B0D7600BA85AF;
+			productRefGroup = BB7D10C4192B0D7600BA85AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB7D10C2192B0D7600BA85AF /* RSS Desktop Backgrounds */,
+				BB7D10E3192B0D7600BA85AF /* RSS Desktop BackgroundsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB7D10C1192B0D7600BA85AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7D10D1192B0D7600BA85AF /* InfoPlist.strings in Resources */,
+				BBC62B33194CE674004CD87B /* raeddit.png in Resources */,
+				BB7D10DF192B0D7600BA85AF /* Images.xcassets in Resources */,
+				BB7D10D7192B0D7600BA85AF /* Credits.rtf in Resources */,
+				BB7D10DD192B0D7600BA85AF /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7D10E2192B0D7600BA85AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7D10EF192B0D7600BA85AF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB7D10BF192B0D7600BA85AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7D1126192B25A800BA85AF /* HTMLNode.m in Sources */,
+				BB7D1127192B25A800BA85AF /* HTMLParser.m in Sources */,
+				BB7D1121192B1E3500BA85AF /* NSDate+InternetDateTime.m in Sources */,
+				BBC62B36194CEA41004CD87B /* Reachability.m in Sources */,
+				BB7D10DA192B0D7600BA85AF /* AppDelegate.m in Sources */,
+				BB7D10D3192B0D7600BA85AF /* main.m in Sources */,
+				BB7D111C192B1A5A00BA85AF /* GDataXMLNode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB7D10E0192B0D7600BA85AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7D10F1192B0D7600BA85AF /* RSS_Desktop_BackgroundsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB7D10E9192B0D7600BA85AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB7D10C2192B0D7600BA85AF /* RSS Desktop Backgrounds */;
+			targetProxy = BB7D10E8192B0D7600BA85AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB7D10CF192B0D7600BA85AF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB7D10D0192B0D7600BA85AF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BB7D10D5192B0D7600BA85AF /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB7D10D6192B0D7600BA85AF /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		BB7D10DB192B0D7600BA85AF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB7D10DC192B0D7600BA85AF /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		BB7D10ED192B0D7600BA85AF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB7D10EE192B0D7600BA85AF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB7D10F2192B0D7600BA85AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BB7D10F3192B0D7600BA85AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BB7D10F5192B0D7600BA85AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RSS Desktop Backgrounds/RSS Desktop Backgrounds-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "RSS Desktop Backgrounds/RSS Desktop Backgrounds-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BB7D10F6192B0D7600BA85AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RSS Desktop Backgrounds/RSS Desktop Backgrounds-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "RSS Desktop Backgrounds/RSS Desktop Backgrounds-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BB7D10F8192B0D7600BA85AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RSS Desktop Backgrounds.app/Contents/MacOS/RSS Desktop Backgrounds";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RSS Desktop Backgrounds/RSS Desktop Backgrounds-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RSS Desktop BackgroundsTests/RSS Desktop BackgroundsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BB7D10F9192B0D7600BA85AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RSS Desktop Backgrounds.app/Contents/MacOS/RSS Desktop Backgrounds";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RSS Desktop Backgrounds/RSS Desktop Backgrounds-Prefix.pch";
+				INFOPLIST_FILE = "RSS Desktop BackgroundsTests/RSS Desktop BackgroundsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB7D10BE192B0D7600BA85AF /* Build configuration list for PBXProject "RSS Desktop Backgrounds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB7D10F2192B0D7600BA85AF /* Debug */,
+				BB7D10F3192B0D7600BA85AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB7D10F4192B0D7600BA85AF /* Build configuration list for PBXNativeTarget "RSS Desktop Backgrounds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB7D10F5192B0D7600BA85AF /* Debug */,
+				BB7D10F6192B0D7600BA85AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB7D10F7192B0D7600BA85AF /* Build configuration list for PBXNativeTarget "RSS Desktop BackgroundsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB7D10F8192B0D7600BA85AF /* Debug */,
+				BB7D10F9192B0D7600BA85AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB7D10BB192B0D7600BA85AF /* Project object */;
+}
