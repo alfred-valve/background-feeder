@@ -78,7 +78,7 @@
 	}
 	else
 	{
-		[self LoadRSSFeed:nil ];
+		[self LoadRSSFeed];
 	}
 		
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
@@ -178,7 +178,7 @@
 - (IBAction)ChangeBackground:(id)sender
 {
 	if ( netStatus != NotReachable )
-		[self LoadRSSFeed: sender];
+		[self LoadRSSFeed];
 	else
 		bReloadOnNetUp = true;
 }
@@ -328,6 +328,12 @@
 	NSComboBox *comboBox = (NSComboBox *)[notification object];
 	if ( comboBox == self.RefreshTimeCombo )
 		[self SetTimerFromCombo: nil];
+	else if ( comboBox == self.ComboConrol )
+	{
+		self.dictImageList = nil; // clear the current dictionary
+		self.dictImageList = [[NSMutableDictionary alloc] init];
+		[self LoadRSSFeed];
+	}
 	
 	[self saveSettings];
 }
@@ -551,7 +557,7 @@
 //------------------------------------------------------
 // Purpose: load the configured RSS feed
 //------------------------------------------------------
-- (IBAction)LoadRSSFeed:(id)sender {
+- (void)LoadRSSFeed {
 	if ( [self.ComboConrol indexOfSelectedItem] >= 0 )
 	{
 		NSString *RSSFeedText = [[NSString alloc] initWithFormat:@"http://www.reddit.com/r/%@Porn/.rss", [self.ComboBoxCell stringValue]];

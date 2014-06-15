@@ -31,6 +31,7 @@
 - (IBAction) ChangeBackground:(id)sender;
 - (IBAction) Configure:(id)sender;
 - (IBAction) SetTimerFromCombo:(id)sender;
+- (void) LoadRSSFeed;
 - (void) comboBoxSelectionDidChange:(NSNotification *)notification;
 - (void) updateInterfaceWithReachability:(Reachability *)reachability;
 - (void) reachabilityChanged:(NSNotification *)note;
