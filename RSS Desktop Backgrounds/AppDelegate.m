@@ -128,15 +128,18 @@
 //------------------------------------------------------
 - (void)updateInterfaceWithReachability:(Reachability *)reachability
 {
+	NetworkStatus prevNetStatus = netStatus;
+	netStatus = [reachability currentReachabilityStatus];
+
 	if ( bReloadOnNetUp )
 	{
-		if ( netStatus == NotReachable &&
-			[reachability currentReachabilityStatus] != NotReachable )
+		if ( netStatus != NotReachable &&
+			prevNetStatus == NotReachable )
 		{
 			[self ChangeBackground:nil ];
+			bReloadOnNetUp = false;
 		}
 	}
-	netStatus = [reachability currentReachabilityStatus];
 }
 
 
