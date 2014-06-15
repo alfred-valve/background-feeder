@@ -102,7 +102,7 @@
 //------------------------------------------------------
 // Purpose: app exit
 //------------------------------------------------------
-- (void)dealloc
+- (void)applicationWillTerminate:(NSNotification *)aNotification
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:kReachabilityChangedNotification object:nil];
 	

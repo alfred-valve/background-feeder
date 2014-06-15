@@ -38,7 +38,7 @@
 - (void) comboBoxSelectionDidChange:(NSNotification *)notification;
 - (void) updateInterfaceWithReachability:(Reachability *)reachability;
 - (void) reachabilityChanged:(NSNotification *)note;
-- (void) dealloc;
+- (void)applicationWillTerminate:(NSNotification *)aNotification;
 - (void) receiveWakeNote: (NSNotification*) note;
 - (void) receiveSleepNote: (NSNotification*) note;
 - (void) saveSettings;
