@@ -140,6 +140,16 @@
 			bReloadOnNetUp = false;
 		}
 	}
+	
+	if ( bReloadRSSOnNetUp )
+	{
+		if ( netStatus != NotReachable &&
+			prevNetStatus == NotReachable )
+		{
+			[self ReloadRssFeed:nil ];
+			bReloadRSSOnNetUp = false;
+		}
+	}
 }
 
 
@@ -162,7 +172,12 @@
 	{
 		// readjust the rss reload time to account for the sleep interval
 		if ( [reloadRSSDate timeIntervalSinceNow] <= 0 ) // just slept for more than 24 hours, reload now
-			[self ReloadRssFeed: self]; //
+		{
+			if ( netStatus == NotReachable )
+				bReloadRSSOnNetUp = true;
+			else
+				[self ReloadRssFeed: self];
+		}
 		else
 		{
 			if ( reloadRSSTimer != nil )
@@ -177,7 +192,7 @@
 		}
 	}
 	
-	if ( updateBackgroundDate )
+	if ( updateBackgroundDate && netStatus != NotReachable )
 	{
 		// readjust the rss reload time to account for the sleep interval
 		if ( [updateBackgroundDate timeIntervalSinceNow] <= 0 ) // just slept for more than 24 hours, reload now
@@ -218,7 +233,7 @@
 		[self LoadRSSFeed];
 	}
 	else
-		bReloadOnNetUp = true;
+		bReloadRSSOnNetUp = true;
 	
 	if ( reloadRSSTimer != nil )
 		reloadRSSTimer = nil;
@@ -298,6 +313,7 @@
 	reloadRSSTimer = nil;
 	netStatus = NotReachable;
 	bReloadOnNetUp = false;
+	bReloadRSSOnNetUp = false;
 	reloadRSSDate = nil;
 	updateBackgroundDate = nil;
 	

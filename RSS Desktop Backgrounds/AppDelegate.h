@@ -19,6 +19,7 @@
 	NSDate *reloadRSSDate;
 	NetworkStatus netStatus;
 	bool bReloadOnNetUp;
+	bool bReloadRSSOnNetUp;
 }
 
 @property (assign) IBOutlet NSWindow *window; // main window
