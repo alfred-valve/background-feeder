@@ -69,18 +69,9 @@
 	self.RefreshTimeCombo.delegate = self;
 	self.ComboConrol.delegate = self;
 
+	// setup the update timer to run
 	[self SetTimerFromCombo: nil];
 
-	if ( [self.dictImageList count] > 0 )
-	{
-		id key = [[self.dictImageList allKeys] objectAtIndex:0]; // Assumes dictImageList is not empty
-		[self loadImage: key ];
-	}
-	else
-	{
-		[self LoadRSSFeed];
-	}
-		
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
     
 	//These notifications are filed on NSWorkspace's notification center, not the default
@@ -98,6 +89,12 @@
     [self.internetReachability startNotifier];
     [self updateInterfaceWithReachability:self.internetReachability];
 
+	// load up a new background based on our cached data
+	[self ChangeBackground: self ];
+	
+	// now try to reload the rss feed from the web
+	[self ReloadRssFeed: self ];
+	
 	[self.window orderOut:self];
 }
 
@@ -160,6 +157,45 @@
 		bReloadOnNetUp = true;
 	else
 		[self ChangeBackground:nil ];
+	
+	if ( reloadRSSDate )
+	{
+		// readjust the rss reload time to account for the sleep interval
+		if ( [reloadRSSDate timeIntervalSinceNow] <= 0 ) // just slept for more than 24 hours, reload now
+			[self ReloadRssFeed: self]; //
+		else
+		{
+			if ( reloadRSSTimer != nil )
+				reloadRSSTimer = nil;
+			
+			// reload RSS once a day
+			reloadRSSTimer = [NSTimer scheduledTimerWithTimeInterval: [reloadRSSDate timeIntervalSinceNow]
+															  target:self
+															selector:@selector(ReloadRssFeed:)
+															userInfo:nil
+															 repeats:NO];
+		}
+	}
+	
+	if ( updateBackgroundDate )
+	{
+		// readjust the rss reload time to account for the sleep interval
+		if ( [updateBackgroundDate timeIntervalSinceNow] <= 0 ) // just slept for more than 24 hours, reload now
+			[self ChangeBackground: self]; //
+		else
+		{
+			if ( updateTimer != nil )
+				updateTimer = nil;
+			
+			// fixup background change timer too
+			updateTimer = [NSTimer scheduledTimerWithTimeInterval: [updateBackgroundDate timeIntervalSinceNow]
+															  target:self
+															selector:@selector(ChangeBackground:)
+															userInfo:nil
+															 repeats:NO];
+		}
+		
+	}
 }
 
 
@@ -173,14 +209,83 @@
 
 
 //------------------------------------------------------
-// Purpose: load a new background image from the current rss feed
+// Purpose: reload the current RSS feed off the network
 //------------------------------------------------------
-- (IBAction)ChangeBackground:(id)sender
+- (IBAction)ReloadRssFeed:(id)sender
 {
 	if ( netStatus != NotReachable )
+	{
 		[self LoadRSSFeed];
+	}
 	else
 		bReloadOnNetUp = true;
+	
+	if ( reloadRSSTimer != nil )
+		reloadRSSTimer = nil;
+	
+	// reload RSS once a day
+	reloadRSSTimer = [NSTimer scheduledTimerWithTimeInterval: 24*60*60
+												   target:self
+												 selector:@selector(ReloadRssFeed:)
+												 userInfo:nil
+												  repeats:NO];
+	// also write down the wall clock time we expect to reload on, so we can track this when we wake from sleep
+	reloadRSSDate = [NSDate dateWithTimeIntervalSinceNow:24*60*60];
+}
+
+
+//------------------------------------------------------
+// Purpose: load a new background image from the current rss feed
+//------------------------------------------------------
+- (IBAction) ChangeBackground:(id)sender
+{
+	if ( !self.dictImageList )
+		return;
+	
+	NSEnumerator *enumerator = [self.dictImageList keyEnumerator];
+	id key;
+	id loadItemKey;
+	LoadedURLEntry *entryToLoad = nil;
+	while ((key = [enumerator nextObject])) {
+		LoadedURLEntry *entry = [self.dictImageList objectForKey:key];
+		if ( !entryToLoad || [[entry dLastUsed] compare: [entryToLoad dLastUsed]] == NSOrderedAscending )
+		{
+			loadItemKey = key;
+			entryToLoad = entry;
+		}
+	}
+
+	[self loadImage: loadItemKey ];
+	entryToLoad.dLastUsed = [NSDate date];
+
+	// now save off the plist
+	if ( self.dictImageList.count > 0 )
+	{
+		NSError *saveError;
+		NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+		NSString *plistPath = [rootPath stringByAppendingPathComponent:IMAGEURL_PLIST];
+		
+		if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
+			[[NSFileManager defaultManager] createDirectoryAtPath:[plistPath stringByDeletingLastPathComponent] withIntermediateDirectories:YES attributes:nil error:nil];
+		}
+		
+		NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.dictImageList];
+		
+		NSData *plistData = [NSPropertyListSerialization dataWithPropertyList:data
+																	   format:NSPropertyListXMLFormat_v1_0
+																	  options:0 error:&saveError];
+		
+		//[self.dictImageList writeToFile:plistPath atomically:YES ];
+		if(plistData) {
+			[plistData writeToFile:plistPath atomically:YES];
+		}
+		else {
+			NSLog( @"%@", saveError);
+		}
+	}
+
+	// reset the load timer
+	[self SetTimerFromCombo: self ];
 }
 
 
@@ -190,8 +295,11 @@
 -(void)awakeFromNib{
 	
 	updateTimer = nil;
+	reloadRSSTimer = nil;
 	netStatus = NotReachable;
 	bReloadOnNetUp = false;
+	reloadRSSDate = nil;
+	updateBackgroundDate = nil;
 	
 	NSString *errorDesc = nil;
 	NSPropertyListFormat format;
@@ -316,7 +424,9 @@
 												   target:self
 												 selector:@selector(ChangeBackground:)
 												 userInfo:nil
-												  repeats:YES];
+												  repeats:NO];
+	
+	updateBackgroundDate = [NSDate dateWithTimeIntervalSinceNow:nWaitTime];
 }
 	
 
@@ -330,9 +440,9 @@
 		[self SetTimerFromCombo: nil];
 	else if ( comboBox == self.ComboConrol )
 	{
-		self.dictImageList = nil; // clear the current dictionary
+		self.dictImageList = nil; // clear the current dictionary of images and reload from scratch
 		self.dictImageList = [[NSMutableDictionary alloc] init];
-		[self LoadRSSFeed];
+		[self ReloadRssFeed: self];
 	}
 	
 	[self saveSettings];
@@ -429,9 +539,7 @@
 // Purpose: parse an rss feed from loaded xml data
 //------------------------------------------------------
 - (void)parseRss:(GDataXMLElement *)rootElement {
-    
-	bLoadedImage = false;
-    NSArray *channels = [rootElement elementsForName:@"channel"];
+	NSArray *channels = [rootElement elementsForName:@"channel"];
     for (GDataXMLElement *channel in channels) {
         
 //        NSString *blogTitle = [channel valueForChild:@"title"];
@@ -441,8 +549,8 @@
             
            // NSString *articleTitle = [item valueForChild:@"title"];
            // NSString *articleUrl = [item valueForChild:@"link"];
-           // NSString *articleDateString = [item valueForChild:@"pubDate"];
-           // NSDate *articleDate = [NSDate dateFromInternetDateTimeString:articleDateString formatHint:DateFormatHintRFC822];
+            NSString *articleDateString = [item valueForChild:@"pubDate"];
+            NSDate *articleDate = [NSDate dateFromInternetDateTimeString:articleDateString formatHint:DateFormatHintRFC822];
             NSString *description = [item valueForChild:@"description"];
             
 			NSError *error;
@@ -462,55 +570,19 @@
 					NSString *pchExt = [link getAttributeNamed:@"href"];
 					if ( [pchExt hasSuffix:@".jpg" ] || [pchExt hasSuffix:@".png" ] )
 					{
-						if ( !bLoadedImage )
-						{
-							[self loadImage: [link getAttributeNamed:@"href"] ];
-						}
-						
 						LoadedURLEntry *entry  = [self.dictImageList valueForKey:[link getAttributeNamed:@"href"] ];
 						if ( !entry )
 						{
 							entry = [LoadedURLEntry alloc];
-							entry.dLastUsed = [NSDate date];
-							entry.nViewedCount = 0;
+							entry.dLastUsed = articleDate;
+							entry.nViewedCount = [NSNumber numberWithInt:0 ];
 							[self.dictImageList setObject:entry forKey:[link getAttributeNamed:@"href"] ];
-						}
-						else
-						{
-							entry.dLastUsed = [NSDate date];
-							entry.nViewedCount =  [NSNumber numberWithInt:[entry.nViewedCount intValue] +1];
 						}
 					}
 				}
 			} // for( HTMLNode)
         }
     }
-	
-	if ( self.dictImageList.count > 0 )
-	{
-		// now save off the plist
-		NSError *saveError;
-		NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-		NSString *plistPath = [rootPath stringByAppendingPathComponent:IMAGEURL_PLIST];
-
-		if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
-			[[NSFileManager defaultManager] createDirectoryAtPath:[plistPath stringByDeletingLastPathComponent] withIntermediateDirectories:YES attributes:nil error:nil];
-		}
-
-		NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.dictImageList];
-
-		NSData *plistData = [NSPropertyListSerialization dataWithPropertyList:data
-																	   format:NSPropertyListXMLFormat_v1_0
-																	  options:0 error:&saveError];
-		
-		//[self.dictImageList writeToFile:plistPath atomically:YES ];
-		if(plistData) {
-			[plistData writeToFile:plistPath atomically:YES];
-		}
-		else {
-			NSLog( @"%@", saveError);
-		}
-	}
 }
 
 
@@ -547,8 +619,8 @@
 	if (doc == nil) {
 		NSLog(@"Failed to parse feed");
 	} else {
-		
 		[self parseFeed:doc.rootElement];
+		[self ChangeBackground:self]; // now load a new background
 	}
 
 }

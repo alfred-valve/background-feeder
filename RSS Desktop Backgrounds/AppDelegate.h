@@ -14,6 +14,9 @@
 	NSStatusItem * statusItem;
 	bool bLoadedImage;
 	NSTimer *updateTimer;
+	NSDate *updateBackgroundDate;
+	NSTimer *reloadRSSTimer;
+	NSDate *reloadRSSDate;
 	NetworkStatus netStatus;
 	bool bReloadOnNetUp;
 }
@@ -27,6 +30,7 @@
 @property (nonatomic) Reachability *internetReachability; // helper object for network status
 
 - (void) parseFeedForImages:(NSData *)pageData;
+- (IBAction) ReloadRssFeed:(id)sender;
 - (IBAction) ChangeBackground:(id)sender;
 - (IBAction) Configure:(id)sender;
 - (IBAction) SetTimerFromCombo:(id)sender;
