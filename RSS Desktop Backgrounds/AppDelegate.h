@@ -21,7 +21,6 @@
 @property (assign) IBOutlet NSWindow *window; // main window
 @property (weak) IBOutlet NSTextFieldCell *RSSTextEdit; // text edit showing rss url we load
 @property (weak) IBOutlet NSImageCell *SampleImage; // shows currently loaded background
-@property (weak) IBOutlet NSComboBoxCell *ComboBoxCell; // selected rss feed type item
 @property (weak) IBOutlet NSComboBox *ComboConrol; // combo pulldown for feed types
 @property (retain) IBOutlet NSMutableDictionary *dictImageList; // dictionary for images we loaded from the rss feed
 @property (weak) IBOutlet NSComboBox *RefreshTimeCombo; //combo for reload time of urls

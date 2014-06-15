@@ -560,7 +560,7 @@
 - (void)LoadRSSFeed {
 	if ( [self.ComboConrol indexOfSelectedItem] >= 0 )
 	{
-		NSString *RSSFeedText = [[NSString alloc] initWithFormat:@"http://www.reddit.com/r/%@Porn/.rss", [self.ComboBoxCell stringValue]];
+		NSString *RSSFeedText = [[NSString alloc] initWithFormat:@"http://www.reddit.com/r/%@Porn/.rss", [self.ComboConrol objectValueOfSelectedItem]];
 		NSURL *feedURL = [NSURL URLWithString:RSSFeedText];
 		NSURLRequest *urlRequst = [NSURLRequest requestWithURL:feedURL];
 		
