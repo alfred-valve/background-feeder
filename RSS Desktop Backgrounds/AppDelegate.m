@@ -552,21 +552,24 @@
 // Purpose: load the configured RSS feed
 //------------------------------------------------------
 - (IBAction)LoadRSSFeed:(id)sender {
-	NSString *RSSFeedText = [[NSString alloc] initWithFormat:@"http://www.reddit.com/r/%@Porn/.rss", [self.ComboBoxCell stringValue]];
-    NSURL *feedURL = [NSURL URLWithString:RSSFeedText];
-    NSURLRequest *urlRequst = [NSURLRequest requestWithURL:feedURL];
-	
-	dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0ul);
-    dispatch_async(queue, ^{
-        NSURLResponse *response = nil;
-        NSError *error = nil;
-        NSData *receivedData = [NSURLConnection sendSynchronousRequest:urlRequst
-                                                     returningResponse:&response
-                                                                 error:&error];
+	if ( [self.ComboConrol indexOfSelectedItem] >= 0 )
+	{
+		NSString *RSSFeedText = [[NSString alloc] initWithFormat:@"http://www.reddit.com/r/%@Porn/.rss", [self.ComboBoxCell stringValue]];
+		NSURL *feedURL = [NSURL URLWithString:RSSFeedText];
+		NSURLRequest *urlRequst = [NSURLRequest requestWithURL:feedURL];
 		
-		[self parseFeedForImages: receivedData];
-		
-    });
+		dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0ul);
+		dispatch_async(queue, ^{
+			NSURLResponse *response = nil;
+			NSError *error = nil;
+			NSData *receivedData = [NSURLConnection sendSynchronousRequest:urlRequst
+														 returningResponse:&response
+																	 error:&error];
+			
+			[self parseFeedForImages: receivedData];
+			
+		});
+	}
 }
 
 
