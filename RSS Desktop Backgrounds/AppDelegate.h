@@ -27,16 +27,17 @@
 @property (weak) IBOutlet NSComboBox *RefreshTimeCombo; //combo for reload time of urls
 @property (nonatomic) Reachability *internetReachability; // helper object for network status
 
-- (void)parseFeedForImages:(NSData *)pageData;
-- (IBAction)ChangeBackground:(id)sender;
-- (IBAction)Configure:(id)sender;
-- (IBAction)SetTimerFromCombo:(id)sender;
-- (void)comboBoxSelectionDidChange:(NSNotification *)notification;
-- (void)updateInterfaceWithReachability:(Reachability *)reachability;
+- (void) parseFeedForImages:(NSData *)pageData;
+- (IBAction) ChangeBackground:(id)sender;
+- (IBAction) Configure:(id)sender;
+- (IBAction) SetTimerFromCombo:(id)sender;
+- (void) comboBoxSelectionDidChange:(NSNotification *)notification;
+- (void) updateInterfaceWithReachability:(Reachability *)reachability;
 - (void) reachabilityChanged:(NSNotification *)note;
-- (void)dealloc;
+- (void) dealloc;
 - (void) receiveWakeNote: (NSNotification*) note;
 - (void) receiveSleepNote: (NSNotification*) note;
+- (void) saveSettings;
 
 @end
 

@@ -11,7 +11,8 @@
 #import "NSDate+InternetDateTime.h"
 #import "HTMLParser.h"
 
-#define IMAGEURL_PLIST @"Images.plist" // plist we save off the images we loaded from the rss feed
+#define IMAGEURL_PLIST @"BackgroundLoader/Images.plist" // plist we save off the images we loaded from the rss feed
+#define SETTINGS_PLIST @"BackgroundLoader/Settings.plist" // plist we save off the images we loaded from the rss feed
 
 //------------------------------------------------------
 // Purpose: list item to track viewed RSS items
@@ -65,19 +66,21 @@
 //------------------------------------------------------
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	updateTimer = nil;
-	netStatus = NotReachable;
-	bReloadOnNetUp = false;
-	
-	[self.ComboConrol selectItemAtIndex: 0 ];
-	[self.RefreshTimeCombo selectItemAtIndex: 1 ];
 	self.RefreshTimeCombo.delegate = self;
+	self.ComboConrol.delegate = self;
 
 	[self SetTimerFromCombo: nil];
 
-	id key = [[self.dictImageList allKeys] objectAtIndex:0]; // Assumes 'message' is not empty
-	[self loadImage: key ];
-
+	if ( [self.dictImageList count] > 0 )
+	{
+		id key = [[self.dictImageList allKeys] objectAtIndex:0]; // Assumes dictImageList is not empty
+		[self loadImage: key ];
+	}
+	else
+	{
+		[self LoadRSSFeed:nil ];
+	}
+		
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
     
 	//These notifications are filed on NSWorkspace's notification center, not the default
@@ -185,29 +188,55 @@
 // Purpose: app is starting
 //------------------------------------------------------
 -(void)awakeFromNib{
+	
+	updateTimer = nil;
+	netStatus = NotReachable;
+	bReloadOnNetUp = false;
+	
 	NSString *errorDesc = nil;
 	NSPropertyListFormat format;
 	NSString *plistPath;
-	NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+	NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory,
 															  NSUserDomainMask, YES) objectAtIndex:0];
+
+	// load up the saved list of images
 	plistPath = [rootPath stringByAppendingPathComponent:IMAGEURL_PLIST];
-	if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
-		plistPath = [[NSBundle mainBundle] pathForResource:@"Data" ofType:@"plist"];
-	}
-	NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
-	
-	NSData *pUnarch = [NSPropertyListSerialization
+	if ( [[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
+		NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
+		NSData *pUnarch = [NSPropertyListSerialization
 												 propertyListFromData:plistXML
 												 mutabilityOption:NSPropertyListMutableContainersAndLeaves
 												 format:&format
 												 errorDescription:&errorDesc];
 	
-	NSMutableDictionary *pData = [NSKeyedUnarchiver unarchiveObjectWithData:pUnarch];
-	self.dictImageList = pData;
+		NSMutableDictionary *pData = [NSKeyedUnarchiver unarchiveObjectWithData:pUnarch];
+		self.dictImageList = pData;
+	}
+	
 	if (!self.dictImageList) {
 		self.dictImageList = [[NSMutableDictionary alloc] init];
 	}
-		
+	
+	// load up our saves settings for rss feed to load and timer setting
+	plistPath = [rootPath stringByAppendingPathComponent:SETTINGS_PLIST];
+	if ([[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
+		NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
+		NSDictionary *temp = (NSDictionary *)[NSPropertyListSerialization
+					   propertyListFromData:plistXML
+					   mutabilityOption:NSPropertyListMutableContainersAndLeaves
+					   format:&format
+					   errorDescription:&errorDesc];
+	
+		[self.ComboConrol selectItemAtIndex: [[temp objectForKey:@"feedtype"] intValue] ];
+		[self.RefreshTimeCombo selectItemAtIndex: [[temp objectForKey:@"reloadtime"] intValue] ];
+	}
+	else
+	{
+		[self.ComboConrol selectItemAtIndex: 0 ];
+		[self.RefreshTimeCombo selectItemAtIndex: 1 ];
+	}
+	
+	// Now setup the status bar item
 	statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
 	[statusItem setMenu:statusMenu];
 
@@ -217,6 +246,34 @@
 	[picture setSize: NSMakeSize(24, 24)];
 	[statusItem setImage:picture];
 	[statusItem setHighlightMode:YES];
+}
+
+
+//------------------------------------------------------
+// Purpose: save ui settings state to our plist
+//------------------------------------------------------
+- (void) saveSettings
+{
+	NSString *error;
+    NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *plistPath = [rootPath stringByAppendingPathComponent:SETTINGS_PLIST];
+
+	if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
+		[[NSFileManager defaultManager] createDirectoryAtPath:[plistPath stringByDeletingLastPathComponent] withIntermediateDirectories:YES attributes:nil error:nil];
+	}
+
+	NSDictionary *plistDict = [NSDictionary dictionaryWithObjects:
+							   [NSArray arrayWithObjects: [NSNumber numberWithInteger:[self.ComboConrol indexOfSelectedItem]], [NSNumber numberWithInteger:[self.RefreshTimeCombo indexOfSelectedItem]], nil]
+														  forKeys:[NSArray arrayWithObjects: @"feedtype", @"reloadtime", nil]];
+    NSData *plistData = [NSPropertyListSerialization dataFromPropertyList:plistDict
+																   format:NSPropertyListXMLFormat_v1_0
+														 errorDescription:&error];
+    if(plistData) {
+        [plistData writeToFile:plistPath atomically:YES];
+    }
+	else {
+		NSLog( @"Error: %@", error );
+	}
 }
 
 
@@ -268,7 +325,11 @@
 //------------------------------------------------------
 - (void)comboBoxSelectionDidChange:(NSNotification *)notification
 {
-	[self SetTimerFromCombo: nil];
+	NSComboBox *comboBox = (NSComboBox *)[notification object];
+	if ( comboBox == self.RefreshTimeCombo )
+		[self SetTimerFromCombo: nil];
+	
+	[self saveSettings];
 }
 
 
@@ -327,7 +388,7 @@
 		NSString *docsDir;
 		NSArray *dirPaths;
 		
-		dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+		dirPaths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
 		docsDir = [dirPaths objectAtIndex:0];
 		NSString *targetPrefix = [[NSString alloc] initWithString: [docsDir stringByAppendingPathComponent:@"screen"]];
 		NSString *imageExt = [self contentTypeForImageData: receivedData];
@@ -423,8 +484,13 @@
 	{
 		// now save off the plist
 		NSError *saveError;
-		NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+		NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES) objectAtIndex:0];
 		NSString *plistPath = [rootPath stringByAppendingPathComponent:IMAGEURL_PLIST];
+
+		if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
+			[[NSFileManager defaultManager] createDirectoryAtPath:[plistPath stringByDeletingLastPathComponent] withIntermediateDirectories:YES attributes:nil error:nil];
+		}
+
 		NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.dictImageList];
 
 		NSData *plistData = [NSPropertyListSerialization dataWithPropertyList:data
