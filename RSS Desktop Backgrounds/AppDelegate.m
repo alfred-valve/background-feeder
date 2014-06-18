@@ -284,9 +284,13 @@
 		[self ChangeBackground:sender]; // call ourselves again with the new image list
 		return;
 	}
-		
+	
 	entryToLoad.dLastUsed = [NSDate date];
-
+	if ( [entryToLoad.bFavorite boolValue ] == YES )
+		[self.FavoriteMenuItem setState:NSOnState];
+	else
+		[self.FavoriteMenuItem setState:NSOffState];
+	
 	[self clearOldImageListEntriesIfNeeded];
 	
 	// now save off the plist
@@ -470,9 +474,11 @@
 
 	if ( entry )
 	{
-		entry.bFavorite = [NSNumber numberWithBool: YES ];
+		if ( [entry.bFavorite boolValue] == NO )
+			entry.bFavorite = [NSNumber numberWithBool: YES ];
+		else
+			entry.bFavorite = [NSNumber numberWithBool: NO ];
 	}
-	
 }
 
 //------------------------------------------------------

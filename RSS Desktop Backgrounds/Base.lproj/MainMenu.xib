@@ -15,6 +15,7 @@
             <connections>
                 <outlet property="ComboBoxCell" destination="Xka-Es-gtF" id="foI-1g-OBF"/>
                 <outlet property="ComboConrol" destination="2wp-rH-T0q" id="NoE-gL-izn"/>
+                <outlet property="FavoriteMenuItem" destination="8cz-V8-Nr4" id="lcI-z0-BTC"/>
                 <outlet property="MarkAsFavorite" destination="8cz-V8-Nr4" id="Jmc-O9-TcI"/>
                 <outlet property="RSSTextEdit" destination="vg1-vR-d4q" id="knS-6f-qD0"/>
                 <outlet property="RefreshTimeCombo" destination="qZ8-2M-Gyc" id="Lqq-GN-6wv"/>

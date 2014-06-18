@@ -29,6 +29,7 @@
 @property (retain) IBOutlet NSMutableDictionary *dictImageList; // dictionary for images we loaded from the rss feed
 @property (weak) IBOutlet NSComboBox *RefreshTimeCombo; //combo for reload time of urls
 @property (nonatomic) Reachability *internetReachability; // helper object for network status
+@property (weak) IBOutlet NSMenuItem *FavoriteMenuItem;
 
 - (void) parseFeedForImages:(NSData *)pageData;
 - (IBAction) ReloadRssFeed:(id)sender;
