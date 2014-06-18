@@ -12,7 +12,6 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate, NSComboBoxDelegate> {
 	IBOutlet NSMenu *statusMenu;
 	NSStatusItem * statusItem;
-	bool bLoadedImage;
 	NSTimer *updateTimer;
 	NSDate *updateBackgroundDate;
 	NSTimer *reloadRSSTimer;
@@ -20,6 +19,7 @@
 	NetworkStatus netStatus;
 	bool bReloadOnNetUp;
 	bool bReloadRSSOnNetUp;
+	NSString *imageURLCurrent;
 }
 
 @property (assign) IBOutlet NSWindow *window; // main window
@@ -43,6 +43,8 @@
 - (void) receiveWakeNote: (NSNotification*) note;
 - (void) receiveSleepNote: (NSNotification*) note;
 - (void) saveSettings;
+- (IBAction)MarkAsFavorite:(id)sender;
+- (void) clearOldImageListEntriesIfNeeded;
 
 @end
 
@@ -50,9 +52,11 @@
 @interface LoadedURLEntry : NSObject <NSCoding> {
     NSDate *dLastUsed;
     NSNumber *nViewedCount;
+	NSNumber *bFavorite;
 }
 
 @property (copy, nonatomic) NSDate *dLastUsed;
 @property (copy, nonatomic) NSNumber *nViewedCount;
+@property (copy, nonatomic) NSNumber *bFavorite;
 
 @end

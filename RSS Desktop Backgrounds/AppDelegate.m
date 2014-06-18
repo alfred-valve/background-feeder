@@ -13,6 +13,7 @@
 
 #define IMAGEURL_PLIST @"BackgroundLoader/Images.plist" // plist we save off the images we loaded from the rss feed
 #define SETTINGS_PLIST @"BackgroundLoader/Settings.plist" // plist we save off the images we loaded from the rss feed
+#define MAX_RSS_IMAGES 100
 
 //------------------------------------------------------
 // Purpose: list item to track viewed RSS items
@@ -21,11 +22,15 @@
 
 @synthesize dLastUsed;
 @synthesize nViewedCount;
+@synthesize bFavorite;
 
 - (id)initWithCoder:(NSCoder *)decoder {
 	if (self = [super init]) {
 		self.dLastUsed = [decoder decodeObjectForKey:@"lastused"];
 		self.nViewedCount = [decoder decodeObjectForKey:@"viewcount"];
+		self.bFavorite = [decoder decodeObjectForKey:@"favorite"];
+		if ( !self.bFavorite )
+			self.bFavorite = [NSNumber numberWithBool: NO ];
 	}
 	return self;
 }
@@ -33,6 +38,7 @@
 - (void)encodeWithCoder:(NSCoder *)encoder {
 	[encoder encodeObject:dLastUsed forKey:@"lastused"];
 	[encoder encodeObject:nViewedCount forKey:@"viewcount"];
+	[encoder encodeObject:bFavorite forKey:@"favorite"];
 }
 
 
@@ -271,9 +277,18 @@
 		}
 	}
 
-	[self loadImage: loadItemKey ];
+	if ( ![self loadImage: loadItemKey ] )
+	{
+		// failed to load image, just delete the entry and grab a new one
+		[self.dictImageList removeObjectForKey:loadItemKey];
+		[self ChangeBackground:sender]; // call ourselves again with the new image list
+		return;
+	}
+		
 	entryToLoad.dLastUsed = [NSDate date];
 
+	[self clearOldImageListEntriesIfNeeded];
+	
 	// now save off the plist
 	if ( self.dictImageList.count > 0 )
 	{
@@ -306,6 +321,40 @@
 
 
 //------------------------------------------------------
+// Purpose: delete entries from dictionary of images till we
+//   get under our storage limit
+//------------------------------------------------------
+-(void)clearOldImageListEntriesIfNeeded
+{
+	// while we have too many entries
+	while ( self.dictImageList.count > MAX_RSS_IMAGES )
+	{
+		NSEnumerator *enumerator = [self.dictImageList keyEnumerator];
+		id key;
+		id oldestItemKey;
+		LoadedURLEntry *entryToDelete = nil;
+		// find the currently oldest entry
+		while ((key = [enumerator nextObject])) {
+			LoadedURLEntry *entry = [self.dictImageList objectForKey:key];
+			if ( !entryToDelete || (
+					[[entry dLastUsed] compare: [entryToDelete dLastUsed]] == NSOrderedAscending
+						&& (entry.bFavorite == nil ||  [entry.bFavorite boolValue] == NO ) ) )
+			{ // we have no entry OR this one is older AND it isn't a favorite (or doesn't have a favorite number due to older plist entry
+				oldestItemKey = key;
+				entryToDelete = entry;
+			}
+		}
+		
+		// no item to delete, all favorites perhaps? Just bail
+		if ( !entryToDelete )
+			break;
+		
+		[self.dictImageList removeObjectForKey:oldestItemKey];
+	}
+}
+
+
+//------------------------------------------------------
 // Purpose: app is starting
 //------------------------------------------------------
 -(void)awakeFromNib{
@@ -317,6 +366,7 @@
 	bReloadRSSOnNetUp = false;
 	reloadRSSDate = nil;
 	updateBackgroundDate = nil;
+	imageURLCurrent = nil;
 	
 	NSString *errorDesc = nil;
 	NSPropertyListFormat format;
@@ -412,6 +462,20 @@
 
 
 //------------------------------------------------------
+// Purpose: mark the currently show desktop image with the favorite tag
+//------------------------------------------------------
+- (IBAction)MarkAsFavorite:(id)sender
+{
+	LoadedURLEntry *entry = [self.dictImageList objectForKey: imageURLCurrent];
+
+	if ( entry )
+	{
+		entry.bFavorite = [NSNumber numberWithBool: YES ];
+	}
+	
+}
+
+//------------------------------------------------------
 // Purpose: read combo for reload time on background and set a timer
 //------------------------------------------------------
 - (IBAction)SetTimerFromCombo:(id)sender
@@ -494,7 +558,7 @@
 //------------------------------------------------------
 // Purpose: given a URL to an image load it as a background image and record it in our loaded plist
 //------------------------------------------------------
-- (void)loadImage:(NSString *)urlToLoad
+- (bool)loadImage:(NSString *)urlToLoad
 {
 	NSURL *imageURL = [NSURL URLWithString:urlToLoad];
 	NSMutableDictionary *screenOptions =
@@ -506,6 +570,8 @@
 	[screenOptions setObject:allowClipping forKey:NSWorkspaceDesktopImageAllowClippingKey];
 		
 	NSURLRequest *urlRequst = [NSURLRequest requestWithURL:imageURL];
+	
+	bool __block bLoadSuccessful = false;
 	
 	dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0ul);
 	dispatch_sync(queue, ^{
@@ -545,10 +611,13 @@
 													forScreen:[NSScreen mainScreen]
 													  options:screenOptions
 														error:&error];
+			imageURLCurrent = urlToLoad;
+			bLoadSuccessful = true;
 			
-			bLoadedImage = true;
 		}
 	});
+	
+	return bLoadSuccessful;
 }
 
 
@@ -593,6 +662,7 @@
 							entry = [LoadedURLEntry alloc];
 							entry.dLastUsed = articleDate;
 							entry.nViewedCount = [NSNumber numberWithInt:0 ];
+							entry.bFavorite = [NSNumber numberWithBool:NO ];
 							[self.dictImageList setObject:entry forKey:[link getAttributeNamed:@"href"] ];
 						}
 					}

@@ -15,6 +15,7 @@
             <connections>
                 <outlet property="ComboBoxCell" destination="Xka-Es-gtF" id="foI-1g-OBF"/>
                 <outlet property="ComboConrol" destination="2wp-rH-T0q" id="NoE-gL-izn"/>
+                <outlet property="MarkAsFavorite" destination="8cz-V8-Nr4" id="Jmc-O9-TcI"/>
                 <outlet property="RSSTextEdit" destination="vg1-vR-d4q" id="knS-6f-qD0"/>
                 <outlet property="RefreshTimeCombo" destination="qZ8-2M-Gyc" id="Lqq-GN-6wv"/>
                 <outlet property="SampleImage" destination="hip-eK-9zi" id="bVM-SG-Sip"/>
@@ -228,18 +229,25 @@
         </menu>
         <menu id="drB-eu-CTs">
             <items>
-                <menuItem title="Change Background" keyEquivalent="c" id="dfR-SK-bku">
+                <menuItem title="Change Background" id="dfR-SK-bku">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="ChangeBackground:" target="Voe-Tx-rLC" id="sCS-g9-IlO"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Configure ..." keyEquivalent="." id="wyd-uj-WQV">
+                <menuItem title="Favorite" id="8cz-V8-Nr4">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="MarkAsFavorite:" target="Voe-Tx-rLC" id="zqW-vU-V1Z"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Configure ..." id="wyd-uj-WQV">
+                    <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="Configure:" target="Voe-Tx-rLC" id="PxY-3Z-LUS"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Quit" keyEquivalent="q" id="SPO-bp-dXY">
+                <menuItem title="Quit" id="SPO-bp-dXY">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="terminate:" target="-3" id="Waw-F9-FlD"/>
