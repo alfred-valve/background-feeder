@@ -20,6 +20,7 @@
 	bool bReloadOnNetUp;
 	bool bReloadRSSOnNetUp;
 	NSString *imageURLCurrent;
+	NSString *imageURLPrevious;
 }
 
 @property (assign) IBOutlet NSWindow *window; // main window
@@ -46,6 +47,8 @@
 - (void) saveSettings;
 - (IBAction)MarkAsFavorite:(id)sender;
 - (void) clearOldImageListEntriesIfNeeded;
+- (IBAction)previousBackground:(id)sender;
+- (bool)loadImage:(NSString *)urlToLoad;
 
 @end
 

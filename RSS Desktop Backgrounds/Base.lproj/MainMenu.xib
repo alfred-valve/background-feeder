@@ -20,6 +20,7 @@
                 <outlet property="RSSTextEdit" destination="vg1-vR-d4q" id="knS-6f-qD0"/>
                 <outlet property="RefreshTimeCombo" destination="qZ8-2M-Gyc" id="Lqq-GN-6wv"/>
                 <outlet property="SampleImage" destination="hip-eK-9zi" id="bVM-SG-Sip"/>
+                <outlet property="previousBackground" destination="ztL-wk-Wa7" id="xfQ-di-set"/>
                 <outlet property="statusMenu" destination="drB-eu-CTs" id="Ysa-zW-MC4"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
@@ -236,10 +237,16 @@
                         <action selector="ChangeBackground:" target="Voe-Tx-rLC" id="sCS-g9-IlO"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Favorite" id="8cz-V8-Nr4">
+                <menuItem title="Mark Favorite" id="8cz-V8-Nr4">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="MarkAsFavorite:" target="Voe-Tx-rLC" id="zqW-vU-V1Z"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Previous Background" id="ztL-wk-Wa7">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="previousBackground:" target="Voe-Tx-rLC" id="kSd-Ex-yI1"/>
                     </connections>
                 </menuItem>
                 <menuItem title="Configure ..." id="wyd-uj-WQV">

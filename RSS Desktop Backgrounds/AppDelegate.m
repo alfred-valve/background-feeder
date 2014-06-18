@@ -371,6 +371,7 @@
 	reloadRSSDate = nil;
 	updateBackgroundDate = nil;
 	imageURLCurrent = nil;
+	imageURLPrevious = nil;
 	
 	NSString *errorDesc = nil;
 	NSPropertyListFormat format;
@@ -480,6 +481,20 @@
 			entry.bFavorite = [NSNumber numberWithBool: NO ];
 	}
 }
+
+
+//------------------------------------------------------
+// Purpose: mark the currently show desktop image with the favorite tag
+//------------------------------------------------------
+- (IBAction)previousBackground:(id)sender
+{
+	if ( imageURLPrevious )
+	{
+		[self loadImage: imageURLPrevious];
+		imageURLPrevious = nil;
+	}
+}
+
 
 //------------------------------------------------------
 // Purpose: read combo for reload time on background and set a timer
@@ -617,6 +632,7 @@
 													forScreen:[NSScreen mainScreen]
 													  options:screenOptions
 														error:&error];
+			imageURLPrevious = imageURLCurrent;
 			imageURLCurrent = urlToLoad;
 			bLoadSuccessful = true;
 			
