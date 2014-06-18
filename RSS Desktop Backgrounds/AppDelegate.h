@@ -49,6 +49,8 @@
 - (void) clearOldImageListEntriesIfNeeded;
 - (IBAction)previousBackground:(id)sender;
 - (bool)loadImage:(NSString *)urlToLoad;
+- (void) saveImageDictToPlist;
+- (IBAction)deleteBackground:(id)sender;
 
 @end
 

@@ -249,6 +249,12 @@
                         <action selector="previousBackground:" target="Voe-Tx-rLC" id="kSd-Ex-yI1"/>
                     </connections>
                 </menuItem>
+                <menuItem title="Delete Background" id="PoR-E2-cF1">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="deleteBackground:" target="Voe-Tx-rLC" id="1KO-EV-NX7"/>
+                    </connections>
+                </menuItem>
                 <menuItem title="Configure ..." id="wyd-uj-WQV">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>

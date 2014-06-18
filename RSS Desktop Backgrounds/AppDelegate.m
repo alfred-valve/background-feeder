@@ -300,7 +300,15 @@
 		[self.FavoriteMenuItem setState:NSOffState];
 	
 	[self clearOldImageListEntriesIfNeeded];
+	[self saveImageDictToPlist];
+}
 	
+
+//------------------------------------------------------
+// Purpose: save off our current image diction to disk
+//------------------------------------------------------
+- (void) saveImageDictToPlist
+{
 	// now save off the plist
 	if ( self.dictImageList.count > 0 )
 	{
@@ -329,6 +337,20 @@
 
 	// reset the load timer
 	[self SetTimerFromCombo: self ];
+}
+
+
+//------------------------------------------------------
+// Purpose: delete the currently displayed background
+//------------------------------------------------------
+- (IBAction)deleteBackground:(id)sender {
+
+	if ( imageURLCurrent )
+	{
+		[self.dictImageList removeObjectForKey:imageURLCurrent];
+		imageURLCurrent = nil;
+		[self ChangeBackground:sender];
+	}
 }
 
 
@@ -494,6 +516,7 @@
 			[self.FavoriteMenuItem setState:NSOffState];
 		}
 	}
+	[self saveImageDictToPlist];
 }
 
 
@@ -506,7 +529,21 @@
 	{
 		[self loadImage: imageURLPrevious];
 		imageURLPrevious = nil;
+		
+		LoadedURLEntry *entry = [self.dictImageList objectForKey: imageURLCurrent];
+		if ( entry )
+		{
+			entry.dLastUsed = [NSDate date];
+			// don't increment view count
+
+			if ( [entry.bFavorite boolValue ] == YES )
+				[self.FavoriteMenuItem setState:NSOnState];
+			else
+				[self.FavoriteMenuItem setState:NSOffState];
+		}
 	}
+	[self saveImageDictToPlist];
+
 }
 
 
