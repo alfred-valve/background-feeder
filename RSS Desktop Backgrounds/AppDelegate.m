@@ -264,17 +264,23 @@
 	if ( !self.dictImageList )
 		return;
 	
-	NSEnumerator *enumerator = [self.dictImageList keyEnumerator];
-	id key;
 	id loadItemKey;
 	LoadedURLEntry *entryToLoad = nil;
-	while ((key = [enumerator nextObject])) {
-		LoadedURLEntry *entry = [self.dictImageList objectForKey:key];
-		if ( !entryToLoad || [[entry dLastUsed] compare: [entryToLoad dLastUsed]] == NSOrderedAscending )
-		{
-			loadItemKey = key;
-			entryToLoad = entry;
+	int nViewCountToUse = 0;
+	while ( !entryToLoad )
+	{
+		NSEnumerator *enumerator = [self.dictImageList keyEnumerator];
+		id key;
+		while ((key = [enumerator nextObject])) {
+			LoadedURLEntry *entry = [self.dictImageList objectForKey:key];
+			if ( [entry.nViewedCount intValue] == nViewCountToUse &&
+				(!entryToLoad || [[entry dLastUsed] compare: [entryToLoad dLastUsed]] == NSOrderedAscending ) )
+			{
+				loadItemKey = key;
+				entryToLoad = entry;
+			}
 		}
+		nViewCountToUse++;
 	}
 
 	if ( ![self loadImage: loadItemKey ] )
@@ -286,6 +292,8 @@
 	}
 	
 	entryToLoad.dLastUsed = [NSDate date];
+	entryToLoad.nViewedCount = [NSNumber numberWithInt:([entryToLoad.nViewedCount intValue] + 1) ];
+
 	if ( [entryToLoad.bFavorite boolValue ] == YES )
 		[self.FavoriteMenuItem setState:NSOnState];
 	else
@@ -476,9 +484,15 @@
 	if ( entry )
 	{
 		if ( [entry.bFavorite boolValue] == NO )
+		{
+			[self.FavoriteMenuItem setState:NSOnState];
 			entry.bFavorite = [NSNumber numberWithBool: YES ];
+		}
 		else
+		{
 			entry.bFavorite = [NSNumber numberWithBool: NO ];
+			[self.FavoriteMenuItem setState:NSOffState];
+		}
 	}
 }
 
