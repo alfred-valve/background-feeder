@@ -1,0 +1,5 @@
+
+- display order on least viewed first ordered by view date, so new loads push to the top
+- add a favorite marking on entries so we keep them around
+- delete oldest entries from list once we have a high water mark (100)
+- remove from list if image fails to load

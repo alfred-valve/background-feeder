@@ -131,7 +131,7 @@
 	NetworkStatus prevNetStatus = netStatus;
 	netStatus = [reachability currentReachabilityStatus];
 
-	if ( bReloadOnNetUp )
+	if ( bReloadOnNetUp && !bReloadRSSOnNetUp )
 	{
 		if ( netStatus != NotReachable &&
 			prevNetStatus == NotReachable )
@@ -147,6 +147,7 @@
 			prevNetStatus == NotReachable )
 		{
 			[self ReloadRssFeed:nil ];
+			bReloadOnNetUp = false;
 			bReloadRSSOnNetUp = false;
 		}
 	}
