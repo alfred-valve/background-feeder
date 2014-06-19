@@ -17,6 +17,7 @@
                 <outlet property="ComboConrol" destination="2wp-rH-T0q" id="NoE-gL-izn"/>
                 <outlet property="FavoriteMenuItem" destination="8cz-V8-Nr4" id="lcI-z0-BTC"/>
                 <outlet property="MarkAsFavorite" destination="8cz-V8-Nr4" id="Jmc-O9-TcI"/>
+                <outlet property="RSSLastLoadedLabel" destination="XPf-6W-LQk" id="mlX-g6-gNR"/>
                 <outlet property="RSSTextEdit" destination="vg1-vR-d4q" id="knS-6f-qD0"/>
                 <outlet property="RefreshTimeCombo" destination="qZ8-2M-Gyc" id="Lqq-GN-6wv"/>
                 <outlet property="SampleImage" destination="hip-eK-9zi" id="bVM-SG-Sip"/>
@@ -119,6 +120,24 @@
                             <action selector="ReloadRssFeed:" target="Voe-Tx-rLC" id="zbq-pY-7I2"/>
                         </connections>
                     </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Zx-sa-pWV">
+                        <rect key="frame" x="37" y="86" width="116" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="RSS Last Loaded:" id="TWd-oP-hGL">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XPf-6W-LQk">
+                        <rect key="frame" x="37" y="61" width="203" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="voc-25-qFi">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="5aY-CQ-10s" secondAttribute="trailing" constant="24" id="2Mm-AR-hgV"/>

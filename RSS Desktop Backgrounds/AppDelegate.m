@@ -439,6 +439,7 @@
 	
 		[self.ComboConrol selectItemAtIndex: [[temp objectForKey:@"feedtype"] intValue] ];
 		[self.RefreshTimeCombo selectItemAtIndex: [[temp objectForKey:@"reloadtime"] intValue] ];
+		lastRSSFeedLoadtime  = [[temp objectForKey:@"lastrssload"] dateValue];
 	}
 	else
 	{
@@ -446,6 +447,15 @@
 		[self.RefreshTimeCombo selectItemAtIndex: 1 ];
 	}
 	
+	if ( !lastRSSFeedLoadtime )
+		lastRSSFeedLoadtime = [NSDate date];
+	
+	NSString *dateString = [NSDateFormatter localizedStringFromDate:lastRSSFeedLoadtime
+														  dateStyle:NSDateFormatterMediumStyle
+														  timeStyle:NSDateFormatterShortStyle];
+	
+	[self.RSSLastLoadedLabel setStringValue:dateString];
+
 	// Now setup the status bar item
 	statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
 	[statusItem setMenu:statusMenu];
@@ -473,8 +483,8 @@
 	}
 
 	NSDictionary *plistDict = [NSDictionary dictionaryWithObjects:
-							   [NSArray arrayWithObjects: [NSNumber numberWithInteger:[self.ComboConrol indexOfSelectedItem]], [NSNumber numberWithInteger:[self.RefreshTimeCombo indexOfSelectedItem]], nil]
-														  forKeys:[NSArray arrayWithObjects: @"feedtype", @"reloadtime", nil]];
+							   [NSArray arrayWithObjects: [NSNumber numberWithInteger:[self.ComboConrol indexOfSelectedItem]], [NSNumber numberWithInteger:[self.RefreshTimeCombo indexOfSelectedItem]], lastRSSFeedLoadtime, nil]
+														  forKeys:[NSArray arrayWithObjects: @"feedtype", @"reloadtime", @"lastrssload", nil]];
     NSData *plistData = [NSPropertyListSerialization dataFromPropertyList:plistDict
 																   format:NSPropertyListXMLFormat_v1_0
 														 errorDescription:&error];
@@ -743,6 +753,12 @@
 			} // for( HTMLNode)
         }
     }
+	
+	NSString *dateString = [NSDateFormatter localizedStringFromDate:[NSDate date]
+														  dateStyle:NSDateFormatterMediumStyle
+														  timeStyle:NSDateFormatterShortStyle];
+
+	[self.RSSLastLoadedLabel setStringValue:dateString];
 }
 
 

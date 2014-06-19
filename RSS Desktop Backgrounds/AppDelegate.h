@@ -21,6 +21,7 @@
 	bool bReloadRSSOnNetUp;
 	NSString *imageURLCurrent;
 	NSString *imageURLPrevious;
+	NSDate *lastRSSFeedLoadtime;
 }
 
 @property (assign) IBOutlet NSWindow *window; // main window
@@ -31,6 +32,7 @@
 @property (weak) IBOutlet NSComboBox *RefreshTimeCombo; //combo for reload time of urls
 @property (nonatomic) Reachability *internetReachability; // helper object for network status
 @property (weak) IBOutlet NSMenuItem *FavoriteMenuItem;
+@property (weak) IBOutlet NSTextField *RSSLastLoadedLabel;
 
 - (void) parseFeedForImages:(NSData *)pageData;
 - (IBAction) ReloadRssFeed:(id)sender;
