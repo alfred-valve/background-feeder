@@ -355,6 +355,21 @@
 
 
 //------------------------------------------------------
+// Purpose: run at login toggled
+//------------------------------------------------------
+- (IBAction)RunAtLoginChecked:(id)sender {
+	if ( [self.RunAtLoginCheck state] == NSOnState )
+	{
+		[self setLaunchAtStartup:true];
+	}
+	else
+	{
+		[self setLaunchAtStartup:false];
+	}
+}
+
+
+//------------------------------------------------------
 // Purpose: delete entries from dictionary of images till we
 //   get under our storage limit
 //------------------------------------------------------
@@ -439,7 +454,7 @@
 	
 		[self.ComboConrol selectItemAtIndex: [[temp objectForKey:@"feedtype"] intValue] ];
 		[self.RefreshTimeCombo selectItemAtIndex: [[temp objectForKey:@"reloadtime"] intValue] ];
-		lastRSSFeedLoadtime  = [[temp objectForKey:@"lastrssload"] dateValue];
+		lastRSSFeedLoadtime  = [temp objectForKey:@"lastrssload"];
 	}
 	else
 	{
@@ -455,7 +470,8 @@
 														  timeStyle:NSDateFormatterShortStyle];
 	
 	[self.RSSLastLoadedLabel setStringValue:dateString];
-
+	[self.RunAtLoginCheck setState: [self isLaunchAtStartup] ? NSOnState : NSOffState];
+	
 	// Now setup the status bar item
 	statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
 	[statusItem setMenu:statusMenu];
@@ -826,5 +842,76 @@
 	}
 }
 
+
+//------------------------------------------------------
+// Purpose: return true if we are set to a login item
+//------------------------------------------------------
+- (BOOL)isLaunchAtStartup {
+    // See if the app is currently in LoginItems.
+    LSSharedFileListItemRef itemRef = [self itemRefInLoginItems];
+    // Store away that boolean.
+    BOOL isInList = itemRef != nil;
+    // Release the reference if it exists.
+    if (itemRef != nil) CFRelease(itemRef);
+	
+    return isInList;
+}
+
+
+//------------------------------------------------------
+// Purpose: turn on or off launching at login
+//------------------------------------------------------
+- (void)setLaunchAtStartup:(bool)bLaunchAtStartup {
+    // Get the LoginItems list.
+    LSSharedFileListRef loginItemsRef = LSSharedFileListCreate(NULL, kLSSharedFileListSessionLoginItems, NULL);
+    if (loginItemsRef == nil) return;
+    if (bLaunchAtStartup && ![self isLaunchAtStartup]) {
+        // Add the app to the LoginItems list.
+        CFURLRef appUrl = (__bridge CFURLRef)[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]];
+        LSSharedFileListItemRef itemRef = LSSharedFileListInsertItemURL(loginItemsRef, kLSSharedFileListItemLast, NULL, NULL, appUrl, NULL, NULL);
+        if (itemRef) CFRelease(itemRef);
+    }
+    else if ( !bLaunchAtStartup && [self isLaunchAtStartup] ){
+        // Remove the app from the LoginItems list.
+        LSSharedFileListItemRef itemRef = [self itemRefInLoginItems];
+        LSSharedFileListItemRemove(loginItemsRef,itemRef);
+        if (itemRef != nil) CFRelease(itemRef);
+    }
+    CFRelease(loginItemsRef);
+}
+
+
+//------------------------------------------------------
+// Purpose: helper to find us in the login items
+//------------------------------------------------------
+- (LSSharedFileListItemRef)itemRefInLoginItems {
+    LSSharedFileListItemRef res = nil;
+	
+    // Get the app's URL.
+    NSURL *bundleURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]];
+    // Get the LoginItems list.
+    LSSharedFileListRef loginItemsRef = LSSharedFileListCreate(NULL, kLSSharedFileListSessionLoginItems, NULL);
+    if (loginItemsRef == nil) return nil;
+    // Iterate over the LoginItems.
+    NSArray *loginItems = (__bridge NSArray *)LSSharedFileListCopySnapshot(loginItemsRef, nil);
+    for (id item in loginItems) {
+        LSSharedFileListItemRef itemRef = (__bridge LSSharedFileListItemRef)(item);
+        CFURLRef itemURLRef;
+        if (LSSharedFileListItemResolve(itemRef, 0, &itemURLRef, NULL) == noErr) {
+            // Again, use toll-free bridging.
+            NSURL *itemURL = (__bridge NSURL *)itemURLRef;
+            if ([itemURL isEqual:bundleURL]) {
+                res = itemRef;
+                break;
+            }
+        }
+    }
+    // Retain the LoginItem reference.
+    if (res != nil) CFRetain(res);
+    CFRelease(loginItemsRef);
+    CFRelease((__bridge CFTypeRef)(loginItems));
+	
+    return res;
+}
 
 @end

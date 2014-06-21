@@ -20,6 +20,7 @@
                 <outlet property="RSSLastLoadedLabel" destination="XPf-6W-LQk" id="mlX-g6-gNR"/>
                 <outlet property="RSSTextEdit" destination="vg1-vR-d4q" id="knS-6f-qD0"/>
                 <outlet property="RefreshTimeCombo" destination="qZ8-2M-Gyc" id="Lqq-GN-6wv"/>
+                <outlet property="RunAtLoginCheck" destination="dAf-U4-Xm6" id="SaD-ub-ntc"/>
                 <outlet property="SampleImage" destination="hip-eK-9zi" id="bVM-SG-Sip"/>
                 <outlet property="previousBackground" destination="ztL-wk-Wa7" id="xfQ-di-set"/>
                 <outlet property="statusMenu" destination="drB-eu-CTs" id="Ysa-zW-MC4"/>
@@ -138,6 +139,17 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dAf-U4-Xm6">
+                        <rect key="frame" x="37" y="128" width="203" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Run at Login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="GMK-RN-RfW">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="RunAtLoginChecked:" target="Voe-Tx-rLC" id="Vf8-v3-GVo"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="5aY-CQ-10s" secondAttribute="trailing" constant="24" id="2Mm-AR-hgV"/>

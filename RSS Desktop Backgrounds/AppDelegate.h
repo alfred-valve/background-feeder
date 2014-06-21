@@ -33,6 +33,7 @@
 @property (nonatomic) Reachability *internetReachability; // helper object for network status
 @property (weak) IBOutlet NSMenuItem *FavoriteMenuItem;
 @property (weak) IBOutlet NSTextField *RSSLastLoadedLabel;
+@property (weak) IBOutlet NSButton *RunAtLoginCheck;
 
 - (void) parseFeedForImages:(NSData *)pageData;
 - (IBAction) ReloadRssFeed:(id)sender;
@@ -53,7 +54,10 @@
 - (bool)loadImage:(NSString *)urlToLoad;
 - (void) saveImageDictToPlist;
 - (IBAction)deleteBackground:(id)sender;
-
+- (IBAction)RunAtLoginChecked:(id)sender;
+- (BOOL)isLaunchAtStartup;
+- (void)setLaunchAtStartup:(bool)bLaunchAtStartup;
+- (LSSharedFileListItemRef)itemRefInLoginItems;
 @end
 
 
