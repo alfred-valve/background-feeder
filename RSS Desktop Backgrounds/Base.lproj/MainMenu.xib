@@ -17,6 +17,8 @@
                 <outlet property="ComboConrol" destination="2wp-rH-T0q" id="NoE-gL-izn"/>
                 <outlet property="FavoriteMenuItem" destination="8cz-V8-Nr4" id="lcI-z0-BTC"/>
                 <outlet property="MarkAsFavorite" destination="8cz-V8-Nr4" id="Jmc-O9-TcI"/>
+                <outlet property="PauseBackground" destination="eTO-lH-bMV" id="VH5-e2-eca"/>
+                <outlet property="PauseMenuItem" destination="eTO-lH-bMV" id="YsL-vg-8Dh"/>
                 <outlet property="RSSLastLoadedLabel" destination="XPf-6W-LQk" id="mlX-g6-gNR"/>
                 <outlet property="RSSTextEdit" destination="vg1-vR-d4q" id="knS-6f-qD0"/>
                 <outlet property="RefreshTimeCombo" destination="qZ8-2M-Gyc" id="Lqq-GN-6wv"/>
@@ -274,6 +276,13 @@
                         <action selector="previousBackground:" target="Voe-Tx-rLC" id="kSd-Ex-yI1"/>
                     </connections>
                 </menuItem>
+                <menuItem title="Pause" id="eTO-lH-bMV">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="PauseBackground:" target="Voe-Tx-rLC" id="L08-zd-MJo"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="lG1-Vu-I1V"/>
                 <menuItem title="Mark As Favorite" id="8cz-V8-Nr4">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
@@ -286,7 +295,8 @@
                         <action selector="deleteBackground:" target="Voe-Tx-rLC" id="1KO-EV-NX7"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Configure ..." id="wyd-uj-WQV">
+                <menuItem isSeparatorItem="YES" id="xx5-dF-5z0"/>
+                <menuItem title="Preferences ..." id="wyd-uj-WQV">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="Configure:" target="Voe-Tx-rLC" id="PxY-3Z-LUS"/>

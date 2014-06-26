@@ -34,6 +34,7 @@
 @property (weak) IBOutlet NSMenuItem *FavoriteMenuItem;
 @property (weak) IBOutlet NSTextField *RSSLastLoadedLabel;
 @property (weak) IBOutlet NSButton *RunAtLoginCheck;
+@property (weak) IBOutlet NSMenuItem *PauseMenuItem;
 
 - (void) parseFeedForImages:(NSData *)pageData;
 - (IBAction) ReloadRssFeed:(id)sender;
@@ -58,6 +59,7 @@
 - (BOOL)isLaunchAtStartup;
 - (void)setLaunchAtStartup:(bool)bLaunchAtStartup;
 - (LSSharedFileListItemRef)itemRefInLoginItems;
+- (IBAction)PauseBackground:(id)sender;
 @end
 
 

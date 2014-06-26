@@ -914,4 +914,23 @@
     return res;
 }
 
+
+//------------------------------------------------------
+// Purpose: stay on this image until unpaused
+//------------------------------------------------------
+- (IBAction)PauseBackground:(id)sender {
+	if ( [self.PauseMenuItem state] != NSOnState )
+	{
+		updateBackgroundDate = nil;
+		[updateTimer invalidate];
+		updateTimer = nil;
+		[self.PauseMenuItem setState: NSOnState];
+	}
+	else
+	{
+		[self SetTimerFromCombo: self];
+		[self.PauseMenuItem setState: NSOffState];
+	}
+}
+
 @end
