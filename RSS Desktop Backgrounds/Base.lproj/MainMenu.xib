@@ -111,7 +111,7 @@
                         </comboBoxCell>
                     </comboBox>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eUS-L4-ggY">
-                        <rect key="frame" x="33" y="13" width="176" height="32"/>
+                        <rect key="frame" x="33" y="25" width="176" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Force RSS feed reload" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7MN-Z3-SHT">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -262,16 +262,10 @@
         </menu>
         <menu id="drB-eu-CTs">
             <items>
-                <menuItem title="Change Background" id="dfR-SK-bku">
+                <menuItem title="Next Background" id="dfR-SK-bku">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="ChangeBackground:" target="Voe-Tx-rLC" id="sCS-g9-IlO"/>
-                    </connections>
-                </menuItem>
-                <menuItem title="Mark Favorite" id="8cz-V8-Nr4">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <connections>
-                        <action selector="MarkAsFavorite:" target="Voe-Tx-rLC" id="zqW-vU-V1Z"/>
                     </connections>
                 </menuItem>
                 <menuItem title="Previous Background" id="ztL-wk-Wa7">
@@ -280,7 +274,13 @@
                         <action selector="previousBackground:" target="Voe-Tx-rLC" id="kSd-Ex-yI1"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Delete Background" id="PoR-E2-cF1">
+                <menuItem title="Mark As Favorite" id="8cz-V8-Nr4">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="MarkAsFavorite:" target="Voe-Tx-rLC" id="zqW-vU-V1Z"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Don't Show Again" id="PoR-E2-cF1">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="deleteBackground:" target="Voe-Tx-rLC" id="1KO-EV-NX7"/>
