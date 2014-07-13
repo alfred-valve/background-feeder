@@ -264,10 +264,17 @@
 	if ( !self.dictImageList )
 		return;
 	
+	// if we have no items loaded (a new install most likely) then reload the rss feed right now
+	if ( self.dictImageList.count == 0 )
+	{
+		[self ReloadRssFeed:self ];
+		return;
+	}
+	
 	id loadItemKey;
 	LoadedURLEntry *entryToLoad = nil;
 	int nViewCountToUse = 0;
-	while ( !entryToLoad )
+	while ( !entryToLoad && nViewCountToUse < 100 )
 	{
 		NSEnumerator *enumerator = [self.dictImageList keyEnumerator];
 		id key;
