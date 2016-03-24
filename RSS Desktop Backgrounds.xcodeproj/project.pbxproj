@@ -447,6 +447,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2,
+					/usr/include/libxml2/,
 				);
 				INFOPLIST_FILE = "RSS Desktop Backgrounds/RSS Desktop Backgrounds-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -467,6 +468,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include/libxml2,
+					/usr/include/libxml2/,
 				);
 				INFOPLIST_FILE = "RSS Desktop Backgrounds/RSS Desktop Backgrounds-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";

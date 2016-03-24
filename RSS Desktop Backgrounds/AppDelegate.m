@@ -789,6 +789,53 @@
 // Purpose: parse an atom style feed from a loaded xml document
 //------------------------------------------------------
 - (void)parseAtom:(GDataXMLElement *)rootElement {
+	NSArray *channels = [rootElement elementsForName:@"entry"];
+	for (GDataXMLElement *channel in channels) {
+		
+		//        NSString *blogTitle = [channel valueForChild:@"title"];
+		
+			// NSString *articleTitle = [item valueForChild:@"title"];
+			// NSString *articleUrl = [item valueForChild:@"link"];
+			NSString *articleDateString = [channel valueForChild:@"updated"];
+			NSDate *articleDate = [NSDate dateFromInternetDateTimeString:articleDateString formatHint:DateFormatHintRFC3339];
+			NSString *description = [channel valueForChild:@"content"];
+			
+			NSError *error;
+			HTMLParser *parser = [[HTMLParser alloc] initWithString:description error:&error];
+			
+			if (error) {
+				NSLog(@"Error: %@", error);
+				return;
+			}
+			
+			HTMLNode *bodyNode = [parser body];
+			NSArray *links = [bodyNode findChildTags:@"a"];
+			
+			for (HTMLNode *link in links) {
+				if ( [[link contents] isEqualToString:@"[link]" ] )
+				{
+					NSString *pchExt = [link getAttributeNamed:@"href"];
+					if ( [pchExt hasSuffix:@".jpg" ] || [pchExt hasSuffix:@".png" ] )
+					{
+						LoadedURLEntry *entry  = [self.dictImageList valueForKey:[link getAttributeNamed:@"href"] ];
+						if ( !entry )
+						{
+							entry = [LoadedURLEntry alloc];
+							entry.dLastUsed = articleDate;
+							entry.nViewedCount = [NSNumber numberWithInt:0 ];
+							entry.bFavorite = [NSNumber numberWithBool:NO ];
+							[self.dictImageList setObject:entry forKey:[link getAttributeNamed:@"href"] ];
+						}
+					}
+				}
+			} // for( HTMLNode)
+		}
+	
+	NSString *dateString = [NSDateFormatter localizedStringFromDate:[NSDate date]
+														  dateStyle:NSDateFormatterMediumStyle
+														  timeStyle:NSDateFormatterShortStyle];
+	
+	[self.RSSLastLoadedLabel setStringValue:dateString];
 }
 
 
@@ -831,7 +878,7 @@
 - (void)LoadRSSFeed {
 	if ( [self.ComboConrol indexOfSelectedItem] >= 0 )
 	{
-		NSString *RSSFeedText = [[NSString alloc] initWithFormat:@"http://www.reddit.com/r/%@Porn/.rss", [self.ComboConrol objectValueOfSelectedItem]];
+		NSString *RSSFeedText = [[NSString alloc] initWithFormat:@"https://www.reddit.com/r/%@Porn/.rss", [self.ComboConrol objectValueOfSelectedItem]];
 		NSURL *feedURL = [NSURL URLWithString:RSSFeedText];
 		NSURLRequest *urlRequst = [NSURLRequest requestWithURL:feedURL];
 		
