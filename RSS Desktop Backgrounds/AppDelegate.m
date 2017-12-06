@@ -485,7 +485,6 @@
 
 	NSString *imageString = [[NSBundle mainBundle] pathForResource:@"raeddit64x64" ofType:@"png"];
 	NSImage * picture =  [[NSImage alloc] initWithContentsOfFile:imageString ];
-	[picture setScalesWhenResized: YES];
 	[picture setSize: NSMakeSize(24, 24)];
 	[statusItem setImage:picture];
 	[statusItem setHighlightMode:YES];
@@ -585,6 +584,11 @@
 //------------------------------------------------------
 - (IBAction)SetTimerFromCombo:(id)sender
 {
+	if ( ![NSThread isMainThread] )
+	{
+		dispatch_async( dispatch_get_main_queue(), ^(void) { [self SetTimerFromCombo:sender]; } );
+		return;
+	}
 	if ( updateTimer != nil )
 		[updateTimer invalidate];
 	updateTimer = nil;
@@ -687,7 +691,9 @@
 													 returningResponse:&response
 																 error:&error];
 		
-		(void)[self.SampleImage initImageCell:[[NSImage alloc] initWithData:receivedData] ];
+		dispatch_async(dispatch_get_main_queue(), ^(void) {
+			(void)[self.SampleImage initImageCell:[[NSImage alloc] initWithData:receivedData] ];
+		});
 		
 		NSString *docsDir;
 		NSArray *dirPaths;
@@ -835,7 +841,9 @@
 														  dateStyle:NSDateFormatterMediumStyle
 														  timeStyle:NSDateFormatterShortStyle];
 	
-	[self.RSSLastLoadedLabel setStringValue:dateString];
+	dispatch_async(dispatch_get_main_queue(), ^(void) {
+		[self.RSSLastLoadedLabel setStringValue:dateString];
+	});
 }
 
 
